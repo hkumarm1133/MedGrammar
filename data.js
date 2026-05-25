@@ -1,6 +1,4 @@
-/* =============================================
-   MedGrammar — Quiz Data (from Excel)
-   ============================================= */
+/* MedGrammar - Quiz Data (from Excel) */
 
 const ARTICLE_ERRORS = [
   {
@@ -102,7 +100,7 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": " The definite article \"the\" is needed before \"last visit\" in this context.",
     "error": "\"INTERVAL:  Since last visit, he has been doing well overall.\" ",
-    "correction": " \"INTERVAL:  Since the last visit, he has been doing well overall.\" ",
+    "correction": " \"INTERVAL:   Since the last visit, he has been doing well overall.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -216,7 +214,7 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": " The definite article \"the\" is needed before \"last visit\" for correct grammar.",
     "error": "\"INTERVAL:  Since last visit, she experienced severe side effects from Topamax,\" ",
-    "correction": " \"INTERVAL:  Since the last visit, she experienced severe side effects from Topamax,\" ",
+    "correction": " \"INTERVAL:   Since the last visit, she experienced severe side effects from Topamax,\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -228,7 +226,7 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": "The noun phrase \"last visit\" requires the definite article \"the\" in this context.",
     "error": "\"INTERVAL:  Since last visit, she has not experienced any seizures or significant health changes.\" ",
-    "correction": " \"INTERVAL:  Since the last visit, she has not experienced any seizures or significant health changes.\"",
+    "correction": " \"INTERVAL:   Since the last visit, she has not experienced any seizures or significant health changes.\"",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -312,7 +310,7 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": " The definite article \"the\" is needed before \"last visit\" for correct grammar.",
     "error": "\"INTERVAL:  Since last visit, she has not experienced any falls and has not noticed any changes in her gait.\" ",
-    "correction": " \"INTERVAL:  Since the last visit, she has not experienced any falls and has not noticed any changes in her gait.\" ",
+    "correction": "  \"INTERVAL: Since the last visit, she has not experienced any falls and has not noticed any changes in her gait.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -330,13 +328,13 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": " The definite article \"the\" is needed before \"last visit\" to make the phrase grammatically correct.",
     "error": "\"INTERVAL:  Since last visit, he reports ongoing fatigue and gait instability but no clearly new neurological symptoms.\" ",
-    "correction": " \"INTERVAL:  Since the last visit, he reports ongoing fatigue and gait instability but no clearly new neurological symptoms.\" ",
+    "correction": " \"INTERVAL: Since the last visit, he reports ongoing fatigue and gait instability but no clearly new neurological symptoms.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The definite article \"the\" is needed before \"last visit\" for correct grammar.",
     "error": "\"INTERVAL:  Since last visit, he has experienced balance issues and a decrease in the use of his right hand.\" ",
-    "correction": " \"INTERVAL:  Since the last visit, he has experienced balance issues and a decrease in the use of his right hand.\" ",
+    "correction": " \"INTERVAL:   Since the last visit, he has experienced balance issues and a decrease in the use of his right hand.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -360,7 +358,7 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": " The preposition \"in\" and article \"the\" are needed for grammatical completeness.",
     "error": "\"Light Touch, Vibration and Proprioception:  Position sense toes intact.\" ",
-    "correction": " \"Light Touch, Vibration and Proprioception:  Position sense in the toes intact.\" ",
+    "correction": " \"Light Touch, Vibration and Proprioception:   Position sense in the toes intact.\" ",
     "section": "PHYSICAL EXAM"
   },
   {
@@ -378,169 +376,169 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": " The preposition and article are incorrect for an occupation; \"as an administrator\" is grammatically correct.",
     "error": "\"Occupations:  Works in an Administrator\" ",
-    "correction": " \"Occupations: Works as an administrator\" ",
+    "correction": " \"Occupations:  Works as an administrator\" ",
     "section": "SOCIAL HISTORY"
   },
   {
     "reasoning": "The definite article \"the\" is needed before \"mother\" for correct grammar.",
     "error": "\"Advised mother to continue frequent feedings throughout the day,\" -",
-    "correction": "\"Advised the mother to continue frequent feedings throughout the day,\": The definite article \"the\" is needed before \"mother\" for correct grammar.",
+    "correction": "Advised the mother to continue frequent feedings throughout the day,",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The definite article \"the\" is needed before \"mother\" for correct grammar.",
     "error": "\"Advised mother to continue soaking the affected area\" -",
-    "correction": "\"Advised the mother to continue soaking the affected area\" : The definite article \"the\" is needed before \"mother\" for correct grammar.",
+    "correction": "Advised the mother to continue soaking the affected area ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The definite article \"the\" is needed before \"current temperature\" for correct grammar.",
     "error": "\"and current temperature is borderline at 100.6.\" -",
-    "correction": "\"and the current temperature is borderline at 100.6.\" : The definite article \"the\" is needed before \"current temperature\" for correct grammar.",
+    "correction": "and the current temperature is borderline at 100.6. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The definite article \"the\" is needed before \"recommendations.\"",
     "error": "\"based on recommendations of Baker Hughes.\" -",
-    "correction": "\"based on the recommendations of Baker Hughes.\": The definite article \"the\" is needed before \"recommendations.\"",
+    "correction": "based on the recommendations of Baker Hughes.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The definite article \"the\" is needed before \"mother\" for correct grammar.",
     "error": "\"Encouraged mother to file the infant's nails if she feels comfortable doing so.\" -",
-    "correction": "\"Encouraged the mother to file the infant's nails if she feels comfortable doing so.\": The definite article \"the\" is needed before \"mother\" for correct grammar.",
+    "correction": "Encouraged the mother to file the infant's nails if she feels comfortable doing so.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The phrase \"cause development of spots\" is missing the article \"the\" before \"development.\"",
     "error": "\"Excessive consumption of carrots can cause the skin color to turn orange, and increased vitamin A can cause development of spots on the eyes.\" -",
-    "correction": "\"Excessive consumption of carrots can cause the skin color to turn orange, and increased vitamin A can cause the development of spots on the eyes.\" : The phrase \"cause development of spots\" is missing the article \"the\" before \"development.\"",
+    "correction": "Excessive consumption of carrots can cause the skin color to turn orange, and increased vitamin A can cause the development of spots on the eyes. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The noun phrase requires an article (\"an\") before \"18-month well-child visit\" to be grammatically correct.",
     "error": "\"Follow-up:  The patient will follow up in 3 months for 18-month well-child visit.\" -",
-    "correction": "\"Follow-up: The patient will follow up in 3 months for an 18-month well-child visit.\": The noun phrase requires an article (\"an\") before \"18-month well-child visit\" to be grammatically correct.",
+    "correction": "Follow-up: The patient will follow up in 3 months for an 18-month well-child visit.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The noun \"father\" here needs the definite article \"the\" for correct grammar.",
     "error": "\"Given the family history of walnut allergy in father, peanuts should not be the first food introduced\" -",
-    "correction": "\"Given the family history of walnut allergy in the father, peanuts should not be the first food introduced\": The noun \"father\" here needs the definite article \"the\" for correct grammar.",
+    "correction": "Given the family history of walnut allergy in the father, peanuts should not be the first food introduced",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The definite article \"the\" is needed before \"pharmacy\" for correct grammar.",
     "error": "\"has been provided and sent to pharmacy.\" -",
-    "correction": "\"has been provided and sent to the pharmacy.\": The definite article \"the\" is needed before \"pharmacy\" for correct grammar.",
+    "correction": "has been provided and sent to the pharmacy.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The noun \"mother\" should take the definite article \"the\" in this context.",
     "error": "\"If crusting occurs only once a day and does not persist, mother can leave it alone.\" -",
-    "correction": "\"If crusting occurs only once a day and does not persist, the mother can leave it alone.\": The noun \"mother\" should take the definite article \"the\" in this context.",
+    "correction": "If crusting occurs only once a day and does not persist, the mother can leave it alone.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is missing a subject (\"it is\") and the noun \"decongestant\" needs an article.",
     "error": "\"If tests are negative, recommended to take real Mucinex, which contains decongestant, in combination with Tylenol.\" -",
-    "correction": "\"If tests are negative, it is recommended to take real Mucinex, which contains a decongestant, in combination with Tylenol.\" : The sentence is missing a subject (\"it is\") and the noun \"decongestant\" needs an article.",
+    "correction": "If tests are negative, it is recommended to take real Mucinex, which contains a decongestant, in combination with Tylenol. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The original phrasing is grammatically awkward and missing an article; this is a clearer and grammatically correct construction.",
     "error": "\"If there is presence of strep in the throat\" -",
-    "correction": "\"If strep is present in the throat\": The original phrasing is grammatically awkward and missing an article; this is a clearer and grammatically correct construction.",
+    "correction": "If strep is present in the throat",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The noun \"condition\" needs the definite article \"the\" in this context.",
     "error": "\"inform parents if condition worsens.\" -",
-    "correction": "\"inform parents if the condition worsens.\": The noun \"condition\" needs the definite article \"the\" in this context.",
+    "correction": "inform parents if the condition worsens.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is missing an article before \"nasal swab\"; adding \"a\" makes it grammatically correct.",
     "error": "\"Nasal swab was obtained.\" -",
-    "correction": "\"A nasal swab was obtained.\" : The sentence is missing an article before \"nasal swab\"; adding \"a\" makes it grammatically correct.",
+    "correction": "A nasal swab was obtained. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The definite article \"the\" is needed, and the pronoun \"it\" clarifies the subject of \"can be received early.\"",
     "error": "\"Noted that he will require meningitis vaccine when he is in seventh grade but can be received early.\" -",
-    "correction": "\"Noted that he will require the meningitis vaccine when he is in seventh grade, but it can be received early.\": The definite article \"the\" is needed, and the pronoun \"it\" clarifies the subject of \"can be received early.\"",
+    "correction": "Noted that he will require the meningitis vaccine when he is in seventh grade, but it can be received early.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is missing an article before \"physical exam.\"",
     "error": "\"Physical exam was performed.\" -",
-    "correction": "\"A physical exam was performed.\" : The sentence is missing an article before \"physical exam.\"",
+    "correction": "A physical exam was performed. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The original is a sentence fragment lacking a subject and verb, and \"every six-hour breathing treatments\" needs an article and hyphenation for correct grammatical construction.",
     "error": "\"Prescribed prednisone to be used for 3 days if symptoms of cough and congestion persist after the Z-Pak and every six-hour breathing treatments.\" -",
-    "correction": "\"Prednisone was prescribed to be used for 3 days if symptoms of cough and congestion persist after the Z-Pak and the every-six-hour breathing treatments.\" : The original is a sentence fragment lacking a subject and verb, and \"every six-hour breathing treatments\" needs an article and hyphenation for correct grammatical construction.",
+    "correction": "Prednisone was prescribed to be used for 3 days if symptoms of cough and congestion persist after the Z-Pak and the every-six-hour breathing treatments. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is missing a subject (\"He\") and needs the definite article \"the\" before \"HPV vaccine.\"",
     "error": "\"Received the Tdap, MenQuadfi, and influenza vaccines today but can wait on HPV vaccine.\" -",
-    "correction": "\"He received the Tdap, MenQuadfi, and influenza vaccines today but can wait on the HPV vaccine.\"",
+    "correction": "He received the Tdap, MenQuadfi, and influenza vaccines today but can wait on the HPV vaccine.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The definite article \"the\" is needed before \"pharmacy.\"",
     "error": "\"Send a prescription to pharmacy for liquid Z-Pak\" -",
-    "correction": "\"Send a prescription to the pharmacy for liquid Z-Pak\"",
+    "correction": "Send a prescription to the pharmacy for liquid Z-Pak",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The article \"an\" is needed before \"EGG allergy.\"",
     "error": "\"She has had EGG allergy but has been consuming EGGS without issues.\" -",
-    "correction": "\"She has had an EGG allergy but has been consuming EGGS without issues.\"",
+    "correction": "She has had an EGG allergy but has been consuming EGGS without issues.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The article \"a\" before \"maladaptive eating behavior\" is unnecessary and ungrammatical in this context.",
     "error": "\"She saw Dr. Bxxx on 11/14/2025 for a maladaptive eating behavior and is scheduled to see her again on 01/15/2026.\" -",
-    "correction": "\"She saw Dr. Bxxx on 11/14/2025 for maladaptive eating behavior and is scheduled to see her again on 01/15/2026.\" ",
+    "correction": "She saw Dr. Bxxx on 11/14/2025 for maladaptive eating behavior and is scheduled to see her again on 01/15/2026. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The definite article \"the\" is needed before \"nose.\"",
     "error": "\"Small, raised bumps on nose, likely milia, were observed.\" -",
-    "correction": "\"Small, raised bumps on the nose, likely milia, were observed.\" ",
+    "correction": "Small, raised bumps on the nose, likely milia, were observed. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "Missing article \"the\" makes the phrase grammatically incomplete.",
     "error": "\"The congestion at this age could be due to weather changing.\" -",
-    "correction": "\"The congestion at this age could be due to the weather changing.\"",
+    "correction": "The congestion at this age could be due to the weather changing.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The definite article \"the\" is needed before \"external environment\" for correct grammar.",
     "error": "\"The transition from amniotic fluid to external environment may be causing the chapped lips,\" -",
-    "correction": "\"The transition from amniotic fluid to the external environment may be causing the chapped lips,\" ",
+    "correction": "The transition from amniotic fluid to the external environment may be causing the chapped lips, ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The definite article \"the\" is needed before \"third cycle.\"",
     "error": "\"This is third cycle, and it is still ongoing.\" -",
-    "correction": "\"This is the third cycle, and it is still ongoing.\" ",
+    "correction": "This is the third cycle, and it is still ongoing. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The phrase \"mild temperature\" requires the article \"a\" to be grammatically correct.",
     "error": "\"Tylenol will be provided for use in case of mild temperature of 99 or fussiness post-vaccination.\" -",
-    "correction": "\"Tylenol will be provided for use in case of a mild temperature of 99 or fussiness post-vaccination.\"",
+    "correction": "Tylenol will be provided for use in case of a mild temperature of 99 or fussiness post-vaccination.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The article \"a\" before \"lead exposure\" is unnecessary and ungrammatical in this context.",
     "error": "\"unless there is a concern for a lead exposure.\" -",
-    "correction": "\"unless there is concern for lead exposure.\" ",
+    "correction": "unless there is concern for lead exposure. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
@@ -720,7 +718,7 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": " \"The cardiology\" is incorrect usage here; the article \"the\" should be removed when referring to the specialty in this context.",
     "error": "\"Follow-up: The patient will follow up with the cardiology once the heart rate has stabilized.\" ",
-    "correction": " \"Follow-up:  The patient will follow up with cardiology once the heart rate has stabilized.\" ",
+    "correction": " \"Follow-up:   The patient will follow up with cardiology once the heart rate has stabilized.\" ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
@@ -2376,187 +2374,187 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": " The sentence is missing the article \"A\" before \"10-year-old child.\"",
     "error": "\"10-year-old child is seen for a wellness visit.\" -",
-    "correction": "\"A 10-year-old child is seen for a wellness visit.\" ",
+    "correction": "A 10-year-old child is seen for a wellness visit. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The sentence is missing an article before \"10-year-old child\" (and \"runny nose\" for parallel structure).",
     "error": "\"10-year-old child is seen for runny nose, headache, and high temperature.\" -",
-    "correction": "\"A 10-year-old child is seen for a runny nose, headache, and high temperature.\" ",
+    "correction": "A 10-year-old child is seen for a runny nose, headache, and high temperature. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The sentence is missing the article \"A\" before \"10-year-old child.\"",
     "error": "\"10-year-old child is seen for sore throat and abdominal pain.\" -",
-    "correction": "\"A 10-year-old child is seen for sore throat and abdominal pain.\"",
+    "correction": "A 10-year-old child is seen for sore throat and abdominal pain.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The sentence is missing the indefinite article \"An\" before \"11-year-old boy.\"",
     "error": "\"11-year-old boy is seen for sinus infection, snoring, and teeth grinding.\" -",
-    "correction": "\"An 11-year-old boy is seen for sinus infection, snoring, and teeth grinding.\" ",
+    "correction": "An 11-year-old boy is seen for sinus infection, snoring, and teeth grinding. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The article \"An\" is needed before \"11-year-old girl.\"",
     "error": "\"11-year-old girl is seen for a well-child check.\" -",
-    "correction": "\"An 11-year-old girl is seen for a well-child check.\"",
+    "correction": "An 11-year-old girl is seen for a well-child check.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The sentence is missing an article before \"11-year-old girl.\"",
     "error": "\"11-year-old girl is seen for fevers and runny nose.\" -",
-    "correction": "\"An 11-year-old girl is seen for fevers and runny nose.\" ",
+    "correction": "An 11-year-old girl is seen for fevers and runny nose. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The sentence is missing an article before \"12-year-old boy.\"",
     "error": "\"12-year-old boy is seen for a sick visit.\" -",
-    "correction": "\"A 12-year-old boy is seen for a sick visit.\"",
+    "correction": "A 12-year-old boy is seen for a sick visit.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The sentence is missing an article before \"16-year-old boy.\"",
     "error": "\"16-year-old boy is seen for abdominal pain.\" -",
-    "correction": "\"A 16-year-old boy is seen for abdominal pain.\" ",
+    "correction": "A 16-year-old boy is seen for abdominal pain. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The sentence is missing an article before \"18-month-old child,\" so \"An\" should be added for correct grammar.",
     "error": "\"18-month-old child is seen for an 18-month well check.\" -",
-    "correction": "\"An 18-month-old child is seen for an 18-month well check.\" ",
+    "correction": "An 18-month-old child is seen for an 18-month well check. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The sentence is missing an article before \"2-week-old child.\"",
     "error": "\"2-week-old child is seen for a weight check today.\" -",
-    "correction": "\"A 2-week-old child is seen for a weight check today.\" ",
+    "correction": "A 2-week-old child is seen for a weight check today. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The sentence is missing an article before \"3-year-old child,\" which is needed for correct grammar.",
     "error": "\"3-year-old child is seen for fever.\" -",
-    "correction": "\"A 3-year-old child is seen for fever.\" ",
+    "correction": "A 3-year-old child is seen for fever. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The sentence is missing an article; \"A\" is needed before \"4-year-old child\" for correct grammar.",
     "error": "\"4-year-old child is seen for a cough.\" -",
-    "correction": "\"A 4-year-old child is seen for a cough.\"",
+    "correction": "A 4-year-old child is seen for a cough.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The indefinite article \"A\" is needed before \"5-year-old child\" for correct grammar.",
     "error": "\"5-year-old child is seen for a toe infection.\" -",
-    "correction": "\"A 5-year-old child is seen for a toe infection.\" ",
+    "correction": "A 5-year-old child is seen for a toe infection. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The sentence is missing an article before \"6-year-old child.\"",
     "error": "\"6-year-old child is seen for a well check.\" -",
-    "correction": "\"A 6-year-old child is seen for a well check.\" ",
+    "correction": "A 6-year-old child is seen for a well check. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The indefinite article \"A\" is needed before \"6-year-old child\" to make the sentence grammatically correct.",
     "error": "\"6-year-old child is seen for left ear pain.\" -",
-    "correction": "\"A 6-year-old child is seen for left ear pain.\" ",
+    "correction": "A 6-year-old child is seen for left ear pain. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The sentence is missing an article (\"A\") before \"6-year-old child,\" which is required for correct grammar.",
     "error": "\"6-year-old child is seen today for a well-child check.\" -",
-    "correction": "\"A 6-year-old child is seen today for a well-child check.\"",
+    "correction": "A 6-year-old child is seen today for a well-child check.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The article \"A\" is needed before \"7-year-old child\" to form a complete sentence.",
     "error": "\"7-year-old child is seen for a rash.\" -",
-    "correction": "\"A 7-year-old child is seen for a rash.\" ",
+    "correction": "A 7-year-old child is seen for a rash. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The sentence is missing an article before \"7-year-old child.\"",
     "error": "\"7-year-old child is seen for a well-child check.\" -",
-    "correction": "\"A 7-year-old child is seen for a well-child check.\" ",
+    "correction": "A 7-year-old child is seen for a well-child check. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The noun phrase beginning with a vowel sound requires the article \"an\" for correct English grammar.",
     "error": "\"8-year-old child is seen for body aches, fatigue, cough, and diarrhea.\" -",
-    "correction": "\"An 8-year-old child is seen for body aches, fatigue, cough, and diarrhea.\" ",
+    "correction": "An 8-year-old child is seen for body aches, fatigue, cough, and diarrhea. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The article \"A\" is needed before the singular count noun \"9-month-old child.\"",
     "error": "\"9-month-old child is seen for a well-child check.\" -",
-    "correction": "\"A 9-month-old child is seen for a well-child check.\"",
+    "correction": "A 9-month-old child is seen for a well-child check.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The definite article \"the\" is needed before \"mother\" in this context.",
     "error": "\"but does not cry when mother attempts this.\" -",
-    "correction": "\"but does not cry when the mother attempts this.\"",
+    "correction": "but does not cry when the mother attempts this.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The noun needs an article and should be in the more standard form \"sports form.\"",
     "error": "\"He does not require sport form.\" -",
-    "correction": "\"He does not require a sports form.\"",
+    "correction": "He does not require a sports form.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The sentence is missing an article before \"psychiatrist\" and needs commas to set off the appositive name.",
     "error": "\"He is followed by psychiatrist Dr. Kxxx every 1 to 1.5 months\" -",
-    "correction": "\"He is followed by a psychiatrist, Dr. Kxxx, every 1 to 1.5 months\" ",
+    "correction": "He is followed by a psychiatrist, Dr. Kxxx, every 1 to 1.5 months ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The article \"a\" is correct here because \"feeding tube\" is a non-specific, countable noun.",
     "error": "\"He was placed on the feeding tube while he was at the hospital.\" -",
-    "correction": "\"He was placed on a feeding tube while he was at the hospital.\"",
+    "correction": "He was placed on a feeding tube while he was at the hospital.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The definite article \"The\" is needed before \"mother\" to make the sentence grammatically complete in this context.",
     "error": "\"Mother has had ingrown toenails that were surgically removed in the past.\" -",
-    "correction": "\"The mother has had ingrown toenails that were surgically removed in the past.\" ",
+    "correction": "The mother has had ingrown toenails that were surgically removed in the past. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The article \"a\" is needed before \"consultation\" for correct grammar.",
     "error": "\"Mother reported consultation with a lactation specialist, who advised three exercises to be performed five times daily.\" -",
-    "correction": "\"Mother reported a consultation with a lactation specialist, who advised three exercises to be performed five times daily.\"",
+    "correction": "Mother reported a consultation with a lactation specialist, who advised three exercises to be performed five times daily.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The indefinite article \"a\" is needed before \"UTI\" to make the sentence grammatically correct.",
     "error": "\"She has been experiencing UTI and has been prescribed amoxicillin.\" -",
-    "correction": "\"She has been experiencing a UTI and has been prescribed amoxicillin.\" ",
+    "correction": "She has been experiencing a UTI and has been prescribed amoxicillin. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The singular countable noun \"interest\" requires an article (\"an\") in this context.",
     "error": "\"She has interest in art club but reports limited opportunities this semester.\" -",
-    "correction": "\"She has an interest in art club but reports limited opportunities this semester.\"",
+    "correction": "She has an interest in art club but reports limited opportunities this semester.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The article/number agreement is incorrect; use either plural noun with \"any\" or singular noun with \"an.\"",
     "error": "\"She has never had any ear infection previously.\" -",
-    "correction": "\"She has never had any ear infections previously.\" or \"She has never had an ear infection previously.\"",
+    "correction": "She has never had any ear infections previously. or \"She has never had an ear infection previously.\"",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The definite article \"the\" is needed before \"meningitis vaccine.\"",
     "error": "\"The mother is curious to know if meningitis vaccine can be received early.\" -",
-    "correction": "\"The mother is curious to know if the meningitis vaccine can be received early.\"",
+    "correction": "The mother is curious to know if the meningitis vaccine can be received early.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The article \"a\" is needed before \"family history\" for correct grammar.",
     "error": "\"There is family history of hernia repair, as the patient's father required surgical correction at the age of 2.\" -",
-    "correction": "\"There is a family history of hernia repair, as the patient's father required surgical correction at the age of 2.\" ",
+    "correction": "There is a family history of hernia repair, as the patient's father required surgical correction at the age of 2. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -3462,7 +3460,7 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": " Missing article \"a\" before \"lot\" is a grammatical error.",
     "error": "\"Occupation:  Worked in a place with lot of silica and graphite exposure.\" ",
-    "correction": " \"Occupation:  Worked in a place with a lot of silica and graphite exposure.\" ",
+    "correction": " \"Occupation:   Worked in a place with a lot of silica and graphite exposure.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -3564,7 +3562,7 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": "The definite article \"the\" is needed before \"past year\" for correct grammar.",
     "error": "\"Diet:  Limited dietary options during past year due to working out of town\" ",
-    "correction": " \"Diet:  Limited dietary options during the past year due to working out of town\"",
+    "correction": " \"Diet:   Limited dietary options during the past year due to working out of town\"",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -3612,7 +3610,7 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": " The article “a” is required before “few years.”",
     "error": "\"Living Condition:  He moved here from Arizona few years back.\" ",
-    "correction": " \"Living Condition:  He moved here from Arizona a few years back.\" ",
+    "correction": " \"Living Condition:   He moved here from Arizona a few years back.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -3714,7 +3712,7 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": " The noun \"company\" requires an article (\"a\"), and the proper noun \"Gym\" should be capitalized.",
     "error": "\"Occupation:  Started new company, Gold's gym.\" ",
-    "correction": " \"Occupation:  Started a new company, Gold's Gym.\" ",
+    "correction": " \"Occupation:   Started a new company, Gold's Gym.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -3732,43 +3730,43 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": "The definite article \"the\" is needed before \"visualized portion\" for correct grammar.",
     "error": "\"Left ear was difficult to examine but visualized portion was normal.\" -",
-    "correction": "\"Left ear was difficult to examine but the visualized portion was normal.\"",
+    "correction": "Left ear was difficult to examine but the visualized portion was normal.",
     "section": "PHYSICAL EXAM"
   },
   {
     "reasoning": " The sentence is missing an article and a preposition, making the grammar incorrect.",
     "error": "\"On percussion, abdomen is dull, left lower quadrant.\" -",
-    "correction": "\"On percussion, the abdomen is dull in the left lower quadrant.\" ",
+    "correction": "On percussion, the abdomen is dull in the left lower quadrant. ",
     "section": "PHYSICAL EXAM"
   },
   {
     "reasoning": "The indefinite article \"a\" is needed before \"small rash.\"",
     "error": "\"Presence of small rash behind the ear.\" -",
-    "correction": "\"Presence of a small rash behind the ear.\"",
+    "correction": "Presence of a small rash behind the ear.",
     "section": "PHYSICAL EXAM"
   },
   {
     "reasoning": "The singular countable noun \"bump\" needs the article \"a.\"",
     "error": "\"Skin:  Erythema noted without any evidence of bump on palpation.\" ",
-    "correction": "\"Skin:  Erythema noted without any evidence of a bump on palpation.\"",
+    "correction": "Skin:  Erythema noted without any evidence of a bump on palpation.",
     "section": "PHYSICAL EXAM"
   },
   {
     "reasoning": "The definite article \"the\" is needed before \"touch.\"",
     "error": "\"Slightly warm to touch.\" -",
-    "correction": "\"Slightly warm to the touch.\"",
+    "correction": "Slightly warm to the touch.",
     "section": "PHYSICAL EXAM"
   },
   {
     "reasoning": " Subject-verb agreement is incorrect (\"elicit\" should be \"elicits\") and \"sinus\" should be plural with an article for correct usage.",
     "error": "\"Nose:  No significant drainage noted. Palpation over sinus elicit pain.\" ",
-    "correction": " \"Nose:  No significant drainage noted. Palpation over the sinuses elicits pain.\" ",
+    "correction": " \"Nose:   No significant drainage noted. Palpation over the sinuses elicits pain.\" ",
     "section": "PHYSICAL EXAM"
   },
   {
     "reasoning": "The phrase \"significant decreased\" is grammatically incorrect; it should be \"significantly decreased\" (adverb + adjective) or \"significant decrease\" (adjective + noun), and a definite article before \"right\" improves clarity.",
     "error": "\"Neck:  Significant decreased range of motion, right and left lateral with right being worse than the left.\" ",
-    "correction": " \"Neck:  Significantly decreased range of motion, right and left lateral, with the right being worse than the left.\" or \"Neck:  Significant decrease in range of motion, right and left lateral, with the right being worse than the left.\"",
+    "correction": " \"Neck:   Significantly decreased range of motion, right and left lateral, with the right being worse than the left.\" or \"Neck:   Significant decrease in range of motion, right and left lateral, with the right being worse than the left.\"",
     "section": "PHYSICAL EXAM"
   },
   {
@@ -3780,7 +3778,7 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": " The definite article \"the\" is needed before \"penis\" for correct grammar.",
     "error": "\"Skin:  Lesion on penis healed with slight discoloration.\" ",
-    "correction": " \"Skin:  Lesion on the penis healed with slight discoloration.\" ",
+    "correction": " \"Skin:   Lesion on the penis healed with slight discoloration.\" ",
     "section": "PHYSICAL EXAM"
   },
   {
@@ -3798,25 +3796,25 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": " The word \"Two\" should not be capitalized mid-sentence, and the definite article \"the\" is needed before \"cecum\" and \"sigmoid\" for correct grammar.",
     "error": "\"Colonoscopy:  2023, Two small polyps were taken from cecum and sigmoid, both adenomatous and precancerous.\" ",
-    "correction": " \"Colonoscopy:  2023, two small polyps were taken from the cecum and sigmoid, both adenomatous and precancerous.\" ",
+    "correction": " \"Colonoscopy:   2023, two small polyps were taken from the cecum and sigmoid, both adenomatous and precancerous.\" ",
     "section": "RESULTS"
   },
   {
     "reasoning": " Missing article \"the,\" unnecessary capitalization of \"Multilevel,\" and incorrect punctuation between C6 and C7.",
     "error": "\"- MRI of the C-spine:  07/2025, Multilevel degenerative cervical spondylosis with most narrowing at C6, C7.\" ",
-    "correction": " \"- MRI of the C-spine:  07/2025, multilevel degenerative cervical spondylosis with the most narrowing at C6-C7.\" ",
+    "correction": " \"- MRI of the C-spine:   07/2025, multilevel degenerative cervical spondylosis with the most narrowing at C6-C7.\" ",
     "section": "RESULTS"
   },
   {
     "reasoning": "The noun phrase \"slightly elevated temperature\" requires an article (\"a\") to be grammatically complete.",
     "error": "\"Positive for tiredness indicating potential slightly elevated temperature.\" -",
-    "correction": "\"Positive for tiredness indicating a slightly elevated temperature.\"",
+    "correction": "Positive for tiredness indicating a slightly elevated temperature.",
     "section": "REVIEW OF SYSTEMS"
   },
   {
     "reasoning": "The noun \"bike\" requires the article \"a\" in this context.",
     "error": "\"Exercise:  Riding bike, walking, going to the gym, limited weightlifting\" ",
-    "correction": " \"Exercise:  Riding a bike, walking, going to the gym, limited weightlifting\"",
+    "correction": " \"Exercise:   Riding a bike, walking, going to the gym, limited weightlifting\"",
     "section": "SOCIAL HISTORY"
   },
   {
@@ -3828,19 +3826,19 @@ const ARTICLE_ERRORS = [
   {
     "reasoning": " The article \"a\" is needed before \"small amount\" to make the noun phrase grammatically correct.",
     "error": "\"Diet:  Consumes small amount of food due to diabetes, tries not to overeat.\" ",
-    "correction": " \"Diet:  Consumes a small amount of food due to diabetes, tries not to overeat.\" ",
+    "correction": " \"Diet:   Consumes a small amount of food due to diabetes, tries not to overeat.\" ",
     "section": "SOCIAL HISTORY"
   },
   {
     "reasoning": "The noun \"shipwright\" requires an article (\"a\") or a preposition change (\"as\") to make the sentence grammatically correct.",
     "error": "\"Occupation:  Works with shipwright.\" ",
-    "correction": " \"Occupation:  Works with a shipwright.\" or \"Occupation:  Works as a shipwright.\"",
+    "correction": " \"Occupation:  Works with a shipwright.\" or \"Occupation:   Works as a shipwright.\"",
     "section": "SOCIAL HISTORY"
   },
   {
     "reasoning": "\"A sales support\" is grammatically incorrect; \"sales support\" should not take the article \"a\" in this context and needs a more appropriate object (e.g., \"team\" or \"department\").",
     "error": "\"Occupation:  Works for a sales support.\" ",
-    "correction": " \"Occupation:  Works in sales support.\" or \"Occupation:  Works for a sales support team.\"",
+    "correction": " \"Occupation:  Works in sales support.\" or \"Occupation:   Works for a sales support team.\"",
     "section": "SOCIAL HISTORY"
   },
   {
@@ -3849,8 +3847,7 @@ const ARTICLE_ERRORS = [
     "correction": " \"He had a 20-pack-year history.\"",
     "section": "SOCIAL HISTORY"
   }
-]
-;
+];
 
 const PREPOSITION_ERRORS = [
   {
@@ -3976,7 +3973,7 @@ const PREPOSITION_ERRORS = [
   {
     "reasoning": " The preposition \"in\" and article \"the\" are needed for grammatical completeness.",
     "error": "\"Light Touch, Vibration and Proprioception:  Position sense toes intact.\" ",
-    "correction": " \"Light Touch, Vibration and Proprioception:  Position sense in the toes intact.\" ",
+    "correction": " \"Light Touch, Vibration and Proprioception:   Position sense in the toes intact.\" ",
     "section": "PHYSICAL EXAM"
   },
   {
@@ -3988,13 +3985,13 @@ const PREPOSITION_ERRORS = [
   {
     "reasoning": " The second sentence is a sentence fragment without a subject and verb, and \"on imaging\" is the correct preposition in this context.",
     "error": "\"Brain scan:  Right cerebellar hemisphere rim-enhancing lesion and a lesion on the right frontal lobe. Also seen in imaging done in 08/2025.\" ",
-    "correction": " \"Brain scan:  Right cerebellar hemisphere rim-enhancing lesion and a lesion in the right frontal lobe. These findings were also seen on imaging done in 08/2025.\" ",
+    "correction": " \"Brain scan:   Right cerebellar hemisphere rim-enhancing lesion and a lesion in the right frontal lobe. These findings were also seen on imaging done in 08/2025.\" ",
     "section": "RESULTS"
   },
   {
     "reasoning": " The phrase \"vary 6-15\" is missing the preposition \"from\" to be grammatically correct.",
     "error": "\"- CPAP data:  Average use 7 hours 23 minutes per night, pressure set to vary 6-15, 0.7 residual breathing pauses per hour.\" ",
-    "correction": " \"- CPAP data:  Average use 7 hours 23 minutes per night, pressure set to vary from 6-15, 0.7 residual breathing pauses per hour.\" ",
+    "correction": " \"- CPAP data:   Average use 7 hours 23 minutes per night, pressure set to vary from 6-15, 0.7 residual breathing pauses per hour.\" ",
     "section": "RESULTS"
   },
   {
@@ -4006,49 +4003,49 @@ const PREPOSITION_ERRORS = [
   {
     "reasoning": " The preposition and article are incorrect for an occupation; \"as an administrator\" is grammatically correct.",
     "error": "\"Occupations:  Works in an Administrator\" ",
-    "correction": " \"Occupations: Works as an administrator\" ",
+    "correction": " \"Occupations:  Works as an administrator\" ",
     "section": "SOCIAL HISTORY"
   },
   {
     "reasoning": "Incorrect preposition use; it should be \"update the chart\" rather than \"update in the chart.\"",
     "error": "\"A profile picture was taken to update in the chart.\" -",
-    "correction": "\"A profile picture was taken to update the chart.\"",
+    "correction": "A profile picture was taken to update the chart.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The phrase is grammatically incorrect due to redundant use of \"vaccines\" and incorrect preposition; \"for\" is appropriate here.",
     "error": "\"He will receive his 11-year-old vaccines of HPV, meningitis, and tetanus vaccines today.\" -",
-    "correction": "\"He will receive his 11-year-old vaccines for HPV, meningitis, and tetanus today.\" : The phrase is grammatically incorrect due to redundant use of \"vaccines\" and incorrect preposition; \"for\" is appropriate here.",
+    "correction": "He will receive his 11-year-old vaccines for HPV, meningitis, and tetanus today. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The preposition \"by\" is correct in the phrase \"followed by\" to indicate sequence.",
     "error": "\"However, counseled not to increase beyond twice daily, followed with pumped breast milk, until his weight has been reassessed and confirmed to be stable.\" -",
-    "correction": "\"However, counseled not to increase beyond twice daily, followed by pumped breast milk, until his weight has been reassessed and confirmed to be stable.\": The preposition \"by\" is correct in the phrase \"followed by\" to indicate sequence.",
+    "correction": "However, counseled not to increase beyond twice daily, followed by pumped breast milk, until his weight has been reassessed and confirmed to be stable.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is missing the subject pronoun \"she\" and uses the incorrect preposition/structure (\"interested to\" should be \"interested in restarting\").",
     "error": "\"If interested to restart fluoxetine, encouraged to return for further evaluation.\" -",
-    "correction": "\"If she is interested in restarting fluoxetine, she is encouraged to return for further evaluation.\": The sentence is missing the subject pronoun \"she\" and uses the incorrect preposition/structure (\"interested to\" should be \"interested in restarting\").",
+    "correction": "If she is interested in restarting fluoxetine, she is encouraged to return for further evaluation.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The phrase is missing the preposition \"at\" and \"follow up\" should be hyphenated as a noun (\"follow-up\").",
     "error": "\"Recommend follow up liver clinic next time.\" -",
-    "correction": "\"Recommend follow-up at the liver clinic next time.\"",
+    "correction": "Recommend follow-up at the liver clinic next time.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The preposition \"of\" is missing, making the phrase \"on the posterior her neck\" grammatically incorrect.",
     "error": "\"The recurrent eczema on the posterior her neck appears to be caused by friction from the car seat or highchair seat.\" -",
-    "correction": "\"The recurrent eczema on the posterior of her neck appears to be caused by friction from the car seat or highchair seat.\"",
+    "correction": "The recurrent eczema on the posterior of her neck appears to be caused by friction from the car seat or highchair seat.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The preposition \"of\" is incorrectly used after \"observed\"; \"such as\" is the correct phrase to introduce examples of the symptoms.",
     "error": "\"which explains the wet symptoms observed of rhinorrhea and moist productive cough.\" -",
-    "correction": "\"which explains the wet symptoms observed, such as rhinorrhea and moist productive cough.\" ",
+    "correction": "which explains the wet symptoms observed, such as rhinorrhea and moist productive cough. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
@@ -4366,19 +4363,19 @@ const PREPOSITION_ERRORS = [
   {
     "reasoning": "The preposition with \"between\" should be \"and,\" not \"to.\"",
     "error": "\"between 2 to 4 times per night\" -",
-    "correction": "\"between 2 and 4 times per night\"",
+    "correction": "between 2 and 4 times per night",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The missing preposition \"in\" and lack of a relative pronoun make the phrase ungrammatical and the modifier ambiguous.",
     "error": "\"issue with her insurance procuring Tamiflu that cost her 800 dollars\" -",
-    "correction": "\"issue with her insurance in procuring Tamiflu, which cost her 800 dollars\"",
+    "correction": "issue with her insurance in procuring Tamiflu, which cost her 800 dollars",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The preposition \"in\" is correct for being inside an incubator.",
     "error": "\"was on an incubator for a long period of time\" -",
-    "correction": "\"was in an incubator for a long period of time\"",
+    "correction": "was in an incubator for a long period of time",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -4570,7 +4567,7 @@ const PREPOSITION_ERRORS = [
   {
     "reasoning": "The preposition and noun form are incorrect; it should be either \"as a quality manager\" (role) or \"in quality management\" (field).",
     "error": "\"Occupation:  Previously worked in quality manager\" ",
-    "correction": " \"Occupation:  Previously worked as a quality manager\" or \"Occupation:  Previously worked in quality management\"",
+    "correction": " \"Occupation:   Previously worked as a quality manager\" or \"Occupation:   Previously worked in quality management\"",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -4588,7 +4585,7 @@ const PREPOSITION_ERRORS = [
   {
     "reasoning": " The correct preposition with \"shift\" in this context is \"on,\" not \"in.\"",
     "error": "\"Occupation:  Assistant at Ixxx, works in night shift.\" ",
-    "correction": " \"Occupation:  Assistant at Ixxx, works on night shift.\" ",
+    "correction": " \"Occupation:   Assistant at Ixxx, works on night shift.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -4612,7 +4609,7 @@ const PREPOSITION_ERRORS = [
   {
     "reasoning": " The preposition and job title phrasing are incorrect, making the sentence ungrammatical.",
     "error": "\"Occupation:  Works in Advertising Clerk golf caddy\" ",
-    "correction": " \"Occupation:  Works as an advertising clerk and golf caddy.\" ",
+    "correction": " \"Occupation:   Works as an advertising clerk and golf caddy.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -4684,7 +4681,7 @@ const PREPOSITION_ERRORS = [
   {
     "reasoning": " Incorrect preposition and noun form; it should indicate working *as* a consultant, not *in* a consultant.",
     "error": "\"Occupation:  Works in an employee security consultant.\" ",
-    "correction": " \"Occupation:  Works as an employee security consultant.\" ",
+    "correction": " \"Occupation:   Works as an employee security consultant.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -4708,13 +4705,13 @@ const PREPOSITION_ERRORS = [
   {
     "reasoning": " \"Lecturer\" (a noun) should be the gerund \"lecturing\" to follow the preposition \"in\" correctly.",
     "error": "\"Education Level:  Senior year in lecturer.\" ",
-    "correction": " \"Education Level:  Senior year in lecturing.\" ",
+    "correction": " \"Education Level:   Senior year in lecturing.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The sentence is missing an article and a preposition, making the grammar incorrect.",
     "error": "\"On percussion, abdomen is dull, left lower quadrant.\" -",
-    "correction": "\"On percussion, the abdomen is dull in the left lower quadrant.\" ",
+    "correction": "On percussion, the abdomen is dull in the left lower quadrant. ",
     "section": "PHYSICAL EXAM"
   },
   {
@@ -4744,29 +4741,28 @@ const PREPOSITION_ERRORS = [
   {
     "reasoning": " The prepositions \"at\" and \"in\" are reversed and \"the\" is missing before \"Nxxx.\"",
     "error": "\"Occupations:  Worked at Nxxx and later in Rxxx.\" ",
-    "correction": " \"Occupations:  Worked in the Nxxx and later at Rxxx.\" ",
+    "correction": " \"Occupations:   Worked in the Nxxx and later at Rxxx.\" ",
     "section": "SOCIAL HISTORY"
   },
   {
     "reasoning": " The heading should be singular to match the single job described, and \"as\" is the correct preposition for describing someone's role.",
     "error": "\"Occupations:  Works two days a week for an Orthopedic Technician.\" ",
-    "correction": " \"Occupation:  Works two days a week as an orthopedic technician.\" ",
+    "correction": " \"Occupation:   Works two days a week as an orthopedic technician.\" ",
     "section": "SOCIAL HISTORY"
   },
   {
     "reasoning": "The preposition and noun use are incorrect; the correct phrase is \"works as a bus valeter.\"",
     "error": "\"Occupations:  Works in bus valeter\" ",
-    "correction": " \"Occupations:  Works as a bus valeter\"",
+    "correction": " \"Occupations:   Works as a bus valeter\"",
     "section": "SOCIAL HISTORY"
   },
   {
     "reasoning": "The noun \"shipwright\" requires an article (\"a\") or a preposition change (\"as\") to make the sentence grammatically correct.",
     "error": "\"Occupation:  Works with shipwright.\" ",
-    "correction": " \"Occupation:  Works with a shipwright.\" or \"Occupation:  Works as a shipwright.\"",
+    "correction": " \"Occupation:   Works with a shipwright.\" or \"Occupation:   Works as a shipwright.\"",
     "section": "SOCIAL HISTORY"
   }
-]
-;
+];
 
 const SV_ERRORS = [
   {
@@ -5018,7 +5014,7 @@ const SV_ERRORS = [
   {
     "reasoning": " The comparative form of the adverb \"easy\" should be \"more easily,\" not \"easier.\"",
     "error": "\"He goes to bed at 10: 30 PM and is able to fall asleep easier.\" ",
-    "correction": " \"He goes to bed at 10: 30 PM and is able to fall asleep more easily.\" ",
+    "correction": " \"He goes to bed at 10:  30 PM and is able to fall asleep more easily.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -5222,19 +5218,19 @@ const SV_ERRORS = [
   {
     "reasoning": "The verb \"is\" is needed for a complete sentence.",
     "error": "\"Vital Signs:  Blood pressure slightly low today.\" ",
-    "correction": " \"Vital Signs:  Blood pressure is slightly low today.\"",
+    "correction": " \"Vital Signs:   Blood pressure is slightly low today.\"",
     "section": "PHYSICAL EXAM"
   },
   {
     "reasoning": " The original is a sentence fragment; adding a verb (\"were observed\") makes it grammatically complete.",
     "error": "\"- Stress test: No signs of ischemia or strain on the heart\" ",
-    "correction": " \"- Stress test:  No signs of ischemia or strain on the heart were observed.\" ",
+    "correction": " \"- Stress test:   No signs of ischemia or strain on the heart were observed.\" ",
     "section": "RESULTS"
   },
   {
     "reasoning": " The second sentence is a sentence fragment without a subject and verb, and \"on imaging\" is the correct preposition in this context.",
     "error": "\"Brain scan:  Right cerebellar hemisphere rim-enhancing lesion and a lesion on the right frontal lobe. Also seen in imaging done in 08/2025.\" ",
-    "correction": " \"Brain scan:  Right cerebellar hemisphere rim-enhancing lesion and a lesion in the right frontal lobe. These findings were also seen on imaging done in 08/2025.\" ",
+    "correction": " \"Brain scan:   Right cerebellar hemisphere rim-enhancing lesion and a lesion in the right frontal lobe. These findings were also seen on imaging done in 08/2025.\" ",
     "section": "RESULTS"
   },
   {
@@ -5246,463 +5242,463 @@ const SV_ERRORS = [
   {
     "reasoning": " The sentence is missing a verb (\"is\") and needs parallel verb forms (\"participates\") for correct grammar.",
     "error": "\"Hobbies:  She remains active in her community, student at a hospice and participating in church organizations.\" ",
-    "correction": " \"Hobbies:  She remains active in her community, is a student at a hospice, and participates in church organizations.\" ",
+    "correction": " \"Hobbies:   She remains active in her community, is a student at a hospice, and participates in church organizations.\" ",
     "section": "SOCIAL HISTORY"
   },
   {
     "reasoning": " The subject \"she\" is needed in the second clause to avoid a dangling construction.",
     "error": "\"Sleep:  Occasional difficulty falling asleep, but remains asleep once asleep\" ",
-    "correction": " \"Sleep:  Occasional difficulty falling asleep, but she remains asleep once asleep\" ",
+    "correction": " \"Sleep:   Occasional difficulty falling asleep, but she remains asleep once asleep\" ",
     "section": "SOCIAL HISTORY"
   },
   {
     "reasoning": " The phrase \"to see if it changes\" is grammatically incomplete and unclear; \"helps\" provides a correct and clear verb, and the parallel structure with \"to see\" should be maintained.",
     "error": "\"A prescription for a concentrated vitamin D drop (400 units/drop) will be sent to the pharmacy to see if it changes and see how she does with it.\" -",
-    "correction": "\"A prescription for a concentrated vitamin D drop (400 units/drop) will be sent to the pharmacy to see if it helps and to see how she does with it.\" ",
+    "correction": "A prescription for a concentrated vitamin D drop (400 units/drop) will be sent to the pharmacy to see if it helps and to see how she does with it. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The verb form is inconsistent with the past-tense narration and lacks a clear subject, making the sentence grammatically incorrect.",
     "error": "\"Additionally, recommend PanOxyl wash during showers on her back and other areas.\" -",
-    "correction": "\"Additionally, recommended PanOxyl wash during showers on her back and other areas.\" or \"Additionally, I recommend PanOxyl wash during showers on her back and other areas.\": The verb form is inconsistent with the past-tense narration and lacks a clear subject, making the sentence grammatically incorrect.",
+    "correction": "Additionally, recommended PanOxyl wash during showers on her back and other areas. or \"Additionally, I recommend PanOxyl wash during showers on her back and other areas.\"",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The original sentence lacks a clear subject and verb agreement; this correction provides a complete, grammatically correct sentence.",
     "error": "\"Additionally, recommended influenza and COVID-19 vaccines and will be administered today as well.\" -",
-    "correction": "\"Additionally, influenza and COVID-19 vaccines were recommended and will be administered today as well.\" : The original sentence lacks a clear subject and verb agreement; this correction provides a complete, grammatically correct sentence.",
+    "correction": "Additionally, influenza and COVID-19 vaccines were recommended and will be administered today as well. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "This is a sentence fragment missing an explicit subject and verb, so it should be converted to a complete sentence.",
     "error": "\"Administered a single dose of Decadron as an injection to ensure full dosage compliance.\" -",
-    "correction": "\"A single dose of Decadron was administered as an injection to ensure full dosage compliance.\": This is a sentence fragment missing an explicit subject and verb, so it should be converted to a complete sentence.",
+    "correction": "A single dose of Decadron was administered as an injection to ensure full dosage compliance.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is a fragment because it lacks an explicit subject and finite verb for the main clause.",
     "error": "\"Administered a single dose of steroid in the office to reduce inflammation around the vocal cords and improve breathing and sleep; explained that the steroid will remain effective for 2 to 3 days.\" -",
-    "correction": "\"A single dose of steroid was administered in the office to reduce inflammation around the vocal cords and improve breathing and sleep; it was explained that the steroid will remain effective for 2 to 3 days.\" : The sentence is a fragment because it lacks an explicit subject and finite verb for the main clause.",
+    "correction": "A single dose of steroid was administered in the office to reduce inflammation around the vocal cords and improve breathing and sleep; it was explained that the steroid will remain effective for 2 to 3 days. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "This is a sentence fragment missing a subject; adding \"He was\" completes the sentence.",
     "error": "\"Advised to avoid further falls or head injuries.\" -",
-    "correction": "\"He was advised to avoid further falls or head injuries.\" : This is a sentence fragment missing a subject; adding \"He was\" completes the sentence.",
+    "correction": "He was advised to avoid further falls or head injuries. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The verb tense should be consistent with the past-tense narration used in the surrounding sentences.",
     "error": "\"Ask them to report any fever that develops over the weekend by 10/27/2025.\" -",
-    "correction": "\"Asked them to report any fever that develops over the weekend by 10/27/2025.\" : The verb tense should be consistent with the past-tense narration used in the surrounding sentences.",
+    "correction": "Asked them to report any fever that develops over the weekend by 10/27/2025. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The subject \"he\" is missing in both clauses, and a comma is needed before \"and\" to join two independent clauses.",
     "error": "\"At 5 months, should roll from back to front and at 6 months, should sit with support.\" -",
-    "correction": "\"At 5 months, he should roll from back to front, and at 6 months, he should sit with support.\": The subject \"he\" is missing in both clauses, and a comma is needed before \"and\" to join two independent clauses.",
+    "correction": "At 5 months, he should roll from back to front, and at 6 months, he should sit with support.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The verb \"preventing\" is misused here; intensity cannot be \"prevented\" but can be \"reduced.\"",
     "error": "\"Clarified that the RSV vaccine does not create immunity but helps in preventing the intensity of illness.\" -",
-    "correction": "\"Clarified that the RSV vaccine does not create immunity but helps in reducing the intensity of illness.\" : The verb \"preventing\" is misused here; intensity cannot be \"prevented\" but can be \"reduced.\"",
+    "correction": "Clarified that the RSV vaccine does not create immunity but helps in reducing the intensity of illness. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is a fragment because it lacks an explicit subject.",
     "error": "\"Counseled that the illness may cause a fever that typically appears after a couple of days, resolves, and then progresses into a regular cold.\" -",
-    "correction": "\"The patient was counseled that the illness may cause a fever that typically appears after a couple of days, resolves, and then progresses into a regular cold.\" : The sentence is a fragment because it lacks an explicit subject.",
+    "correction": "The patient was counseled that the illness may cause a fever that typically appears after a couple of days, resolves, and then progresses into a regular cold. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The verb tense should match the past-tense narrative of the clinical encounter.",
     "error": "\"Discuss the possibility of croup; the patient is not currently exhibiting characteristic symptoms such as a barky cough or hoarseness.\" -",
-    "correction": "\"Discussed the possibility of croup; the patient is not currently exhibiting characteristic symptoms such as a barky cough or hoarseness.\" : The verb tense should match the past-tense narrative of the clinical encounter.",
+    "correction": "Discussed the possibility of croup; the patient is not currently exhibiting characteristic symptoms such as a barky cough or hoarseness. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The comma is incorrectly joining two independent clauses (comma splice), and the verb \"were\" clarifies the passive construction.",
     "error": "\"Discussed options for refilling the medications, refills deferred.\" -",
-    "correction": "\"Discussed options for refilling the medications; refills were deferred.\" : The comma is incorrectly joining two independent clauses (comma splice), and the verb \"were\" clarifies the passive construction.",
+    "correction": "Discussed options for refilling the medications; refills were deferred. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The original is a sentence fragment lacking an explicit subject.",
     "error": "\"Discussed that adenoids cannot be visualized.\" -",
-    "correction": "\"We discussed that adenoids cannot be visualized.\" : The original is a sentence fragment lacking an explicit subject.",
+    "correction": "We discussed that adenoids cannot be visualized. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "This is a sentence fragment missing an explicit subject.",
     "error": "\"Discussed the ongoing hand, foot and mouth infection affecting the children.\" -",
-    "correction": "\"We discussed the ongoing hand, foot and mouth infection affecting the children.\" : This is a sentence fragment missing an explicit subject.",
+    "correction": "We discussed the ongoing hand, foot and mouth infection affecting the children. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The original is a sentence fragment lacking an explicit subject.",
     "error": "\"Discussed the options of an ENT referral initially versus a sleep study and then an ENT referral if abnormal, with the preference being to obtain the sleep study initially.\" -",
-    "correction": "\"We discussed the options of an ENT referral initially versus a sleep study and then an ENT referral if abnormal, with the preference being to obtain the sleep study initially.\" : The original is a sentence fragment lacking an explicit subject.",
+    "correction": "We discussed the options of an ENT referral initially versus a sleep study and then an ENT referral if abnormal, with the preference being to obtain the sleep study initially. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is missing an explicit subject, resulting in a grammatical fragment and unclear parallel structure.",
     "error": "\"Due to recurrent ear infections, recommend referral to an ear, nose, and throat physician now, as it may take several months to obtain an appointment, and continue monitoring until then.\" -",
-    "correction": "\"Due to recurrent ear infections, we recommend referral to an ear, nose, and throat physician now, as it may take several months to obtain an appointment, and we will continue monitoring until then.\": The sentence is missing an explicit subject, resulting in a grammatical fragment and unclear parallel structure.",
+    "correction": "Due to recurrent ear infections, we recommend referral to an ear, nose, and throat physician now, as it may take several months to obtain an appointment, and we will continue monitoring until then.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The original has a missing subject and a comma splice between two independent clauses.",
     "error": "\"Explained that his growth is plateauing and that puberty takes around 5 years, the patient acknowledged understanding.\" -",
-    "correction": "\"It was explained that his growth is plateauing and that puberty takes around 5 years; the patient acknowledged understanding.\" : The original has a missing subject and a comma splice between two independent clauses.",
+    "correction": "It was explained that his growth is plateauing and that puberty takes around 5 years; the patient acknowledged understanding. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is missing an explicit subject, making it a sentence fragment.",
     "error": "\"Explained that the Pepto is milk of magnesia and is typically used for diarrhea, so it may not be as helpful in this case.\" -",
-    "correction": "\"I explained that the Pepto is milk of magnesia and is typically used for diarrhea, so it may not be as helpful in this case.\" : The sentence is missing an explicit subject, making it a sentence fragment.",
+    "correction": "I explained that the Pepto is milk of magnesia and is typically used for diarrhea, so it may not be as helpful in this case. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is missing a verb and needs \"is\" for proper grammar.",
     "error": "\"Follow-up recommended in 3 months for medication check.\" -",
-    "correction": "\"Follow-up is recommended in 3 months for medication check.\": The sentence is missing a verb and needs \"is\" for proper grammar.",
+    "correction": "Follow-up is recommended in 3 months for medication check.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The original sentence has an implied subject error; the corrected version provides a clear subject to match the introductory clause.",
     "error": "\"Given the chronic nature of the symptoms and the lack of response to initial treatments, refer to a gastroenterologist for further evaluation.\" -",
-    "correction": "\"Given the chronic nature of the symptoms and the lack of response to initial treatments, the patient will be referred to a gastroenterologist for further evaluation.\" : The original sentence has an implied subject error; the corrected version provides a clear subject to match the introductory clause.",
+    "correction": "Given the chronic nature of the symptoms and the lack of response to initial treatments, the patient will be referred to a gastroenterologist for further evaluation. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The clause is missing a subject; adding \"he was\" corrects the grammatical structure.",
     "error": "\"Given the chronic nature of the symptoms and the lack of response to initial treatments, referred to a gastroenterologist for further evaluation.\" -",
-    "correction": "\"Given the chronic nature of the symptoms and the lack of response to initial treatments, he was referred to a gastroenterologist for further evaluation.\" : The clause is missing a subject; adding \"he was\" corrects the grammatical structure.",
+    "correction": "Given the chronic nature of the symptoms and the lack of response to initial treatments, he was referred to a gastroenterologist for further evaluation. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is missing the subject pronoun \"She\" and the phrase \"has done with growing\" is ungrammatical; \"is done growing\" is the correct form.",
     "error": "\"Has done with growing already and it is getting worse because usually it gets worse as people are growing.\" -",
-    "correction": "\"She is done growing already, and it is not getting worse because usually it gets worse as people are growing.\": The sentence is missing the subject pronoun \"She\" and the phrase \"has done with growing\" is ungrammatical; \"is done growing\" is the correct form.",
+    "correction": "She is done growing already, and it is not getting worse because usually it gets worse as people are growing.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is missing a subject pronoun (\"She\") and has awkward verb tense/structure.",
     "error": "\"Has started period at 13 and at the end of 13, has still grown, which is a good thing.\" -",
-    "correction": "\"She started her period at 13, and by the end of 13 she had still grown, which is a good thing.\": The sentence is missing a subject pronoun (\"She\") and has awkward verb tense/structure.",
+    "correction": "She started her period at 13, and by the end of 13 she had still grown, which is a good thing.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The subject \"he\" is missing after \"though,\" making the clause grammatically incomplete.",
     "error": "\"He has been experiencing persistent congestion and coughing, though has had only one episode of croup recently.\" -",
-    "correction": "\"He has been experiencing persistent congestion and coughing, though he has had only one episode of croup recently.\": The subject \"he\" is missing after \"though,\" making the clause grammatically incomplete.",
+    "correction": "He has been experiencing persistent congestion and coughing, though he has had only one episode of croup recently.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The second sentence is a sentence fragment because it lacks a subject.",
     "error": "\"Her last lab work showed mildly elevated triglycerides. Ordered a fasting cholesterol panel for her to complete at her convenience, preferably during a school break.\" -",
-    "correction": "\"Her last lab work showed mildly elevated triglycerides. A fasting cholesterol panel was ordered for her to complete at her convenience, preferably during a school break.\" : The second sentence is a sentence fragment because it lacks a subject.",
+    "correction": "Her last lab work showed mildly elevated triglycerides. A fasting cholesterol panel was ordered for her to complete at her convenience, preferably during a school break. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The subject \"set\" is singular and should take the singular verb \"was\" instead of \"were.\"",
     "error": "\"Her last set of labs were done on 09/19/2025, showing normal TSH, T4, CMP, and hemoglobin A1c.\" -",
-    "correction": "\"Her last set of labs was done on 09/19/2025, showing normal TSH, T4, CMP, and hemoglobin A1c.\" : The subject \"set\" is singular and should take the singular verb \"was\" instead of \"were.\"",
+    "correction": "Her last set of labs was done on 09/19/2025, showing normal TSH, T4, CMP, and hemoglobin A1c. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The third clause is missing a subject, so adding \"his\" corrects the subject-verb structure.",
     "error": "\"His lungs are clear, he appears well-hydrated, and ears appear normal.\" -",
-    "correction": "\"His lungs are clear, he appears well-hydrated, and his ears appear normal.\": The third clause is missing a subject, so adding \"his\" corrects the subject-verb structure.",
+    "correction": "His lungs are clear, he appears well-hydrated, and his ears appear normal.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The clause \"and does not appear\" lacks a clear subject, creating a grammatical error; adding \"that\" correctly links it to \"infection.\"",
     "error": "\"His mouth examination revealed shotty anterior cervical lymph nodes, suggestive of an ongoing infection and does not appear to be a streptococcal infection.\" -",
-    "correction": "\"His mouth examination revealed shotty anterior cervical lymph nodes, suggestive of an ongoing infection that does not appear to be a streptococcal infection.\": The clause \"and does not appear\" lacks a clear subject, creating a grammatical error; adding \"that\" correctly links it to \"infection.\"",
+    "correction": "His mouth examination revealed shotty anterior cervical lymph nodes, suggestive of an ongoing infection that does not appear to be a streptococcal infection.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is missing the subject pronoun \"she\" and uses the incorrect preposition/structure (\"interested to\" should be \"interested in restarting\").",
     "error": "\"If interested to restart fluoxetine, encouraged to return for further evaluation.\" -",
-    "correction": "\"If she is interested in restarting fluoxetine, she is encouraged to return for further evaluation.\": The sentence is missing the subject pronoun \"she\" and uses the incorrect preposition/structure (\"interested to\" should be \"interested in restarting\").",
+    "correction": "If she is interested in restarting fluoxetine, she is encouraged to return for further evaluation.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is missing the subject pronoun \"she\" in both clauses.",
     "error": "\"If needs to transfer pharmacies, can request the transfer to a closer Pxxx.\" -",
-    "correction": "\"If she needs to transfer pharmacies, she can request the transfer to a closer Pxxx.\": The sentence is missing the subject pronoun \"she\" in both clauses.",
+    "correction": "If she needs to transfer pharmacies, she can request the transfer to a closer Pxxx.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is missing a subject (\"it is\") and the noun \"decongestant\" needs an article.",
     "error": "\"If tests are negative, recommended to take real Mucinex, which contains decongestant, in combination with Tylenol.\" -",
-    "correction": "\"If tests are negative, it is recommended to take real Mucinex, which contains a decongestant, in combination with Tylenol.\" : The sentence is missing a subject (\"it is\") and the noun \"decongestant\" needs an article.",
+    "correction": "If tests are negative, it is recommended to take real Mucinex, which contains a decongestant, in combination with Tylenol. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is missing the indirect object (\"her\") after \"informed\" and needs a clearer verb (\"remain\") for grammatical correctness.",
     "error": "\"Informed might not grow anymore and might stand at 5 feet 2 inches.\" -",
-    "correction": "\"Informed her that she might not grow anymore and might remain at 5 feet 2 inches.\": The sentence is missing the indirect object (\"her\") after \"informed\" and needs a clearer verb (\"remain\") for grammatical correctness.",
+    "correction": "Informed her that she might not grow anymore and might remain at 5 feet 2 inches.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence lacks a subject, making it grammatically incomplete.",
     "error": "\"Informed that a referral is not required to see an optometrist.\" -",
-    "correction": "\"He was informed that a referral is not required to see an optometrist.\" : The sentence lacks a subject, making it grammatically incomplete.",
+    "correction": "He was informed that a referral is not required to see an optometrist. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "This is a sentence fragment missing a subject; adding \"I\" provides a complete sentence.",
     "error": "\"Informed them that dexamethasone is considered an effective treatment for mild to moderate croup.\" -",
-    "correction": "\"I informed them that dexamethasone is considered an effective treatment for mild to moderate croup.\" : This is a sentence fragment missing a subject; adding \"I\" provides a complete sentence.",
+    "correction": "I informed them that dexamethasone is considered an effective treatment for mild to moderate croup. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is a fragment because it lacks an explicit subject.",
     "error": "\"Issued a black box warning for potential worsening of depression or suicidal ideation following the medication change.\" -",
-    "correction": "\"We issued a black box warning for potential worsening of depression or suicidal ideation following the medication change.\" : The sentence is a fragment because it lacks an explicit subject.",
+    "correction": "We issued a black box warning for potential worsening of depression or suicidal ideation following the medication change. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The subject of the verb \"informed\" is missing; this passive construction is ungrammatical without a proper subject.",
     "error": "\"It was informed that two doses of influenza vaccine are required only during the first season of vaccination in infancy\" -",
-    "correction": "\"The mother was informed that two doses of influenza vaccine are required only during the first season of vaccination in infancy\": The subject of the verb \"informed\" is missing; this passive construction is ungrammatical without a proper subject.",
+    "correction": "The mother was informed that two doses of influenza vaccine are required only during the first season of vaccination in infancy",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The passive construction is incorrect; \"it\" cannot be the subject of \"was reassured\" in this context and should be changed to \"was reassuring.\"",
     "error": "\"It was reassured that the baby's wet diapers and bowel movements are normal\" -",
-    "correction": "\"It was reassuring that the baby's wet diapers and bowel movements are normal\" : The passive construction is incorrect; \"it\" cannot be the subject of \"was reassured\" in this context and should be changed to \"was reassuring.\"",
+    "correction": "It was reassuring that the baby's wet diapers and bowel movements are normal ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The original is a sentence fragment lacking an explicit subject.",
     "error": "\"Made a referral to Dxxx under Dr. Exxx.\" -",
-    "correction": "\"We made a referral to Dxxx under Dr. Exxx.\" : The original is a sentence fragment lacking an explicit subject.",
+    "correction": "We made a referral to Dxxx under Dr. Exxx. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The definite article \"the\" is needed, and the pronoun \"it\" clarifies the subject of \"can be received early.\"",
     "error": "\"Noted that he will require meningitis vaccine when he is in seventh grade but can be received early.\" -",
-    "correction": "\"Noted that he will require the meningitis vaccine when he is in seventh grade, but it can be received early.\": The definite article \"the\" is needed, and the pronoun \"it\" clarifies the subject of \"can be received early.\"",
+    "correction": "Noted that he will require the meningitis vaccine when he is in seventh grade, but it can be received early.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is a fragment and needs an explicit subject to be grammatically complete.",
     "error": "\"Noted that soaking the affected area may help draw out any fluid.\" -",
-    "correction": "\"It was noted that soaking the affected area may help draw out any fluid.\" : The sentence is a fragment and needs an explicit subject to be grammatically complete.",
+    "correction": "It was noted that soaking the affected area may help draw out any fluid. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The subject \"it\" is missing, making the clause grammatically incomplete.",
     "error": "\"Platelet count is satisfactory, although had previously been mildly increased due to inflammation.\" -",
-    "correction": "\"Platelet count is satisfactory, although it had previously been mildly increased due to inflammation.\": The subject \"it\" is missing, making the clause grammatically incomplete.",
+    "correction": "Platelet count is satisfactory, although it had previously been mildly increased due to inflammation.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The original is a sentence fragment lacking a subject and verb, and \"every six-hour breathing treatments\" needs an article and hyphenation for correct grammatical construction.",
     "error": "\"Prescribed prednisone to be used for 3 days if symptoms of cough and congestion persist after the Z-Pak and every six-hour breathing treatments.\" -",
-    "correction": "\"Prednisone was prescribed to be used for 3 days if symptoms of cough and congestion persist after the Z-Pak and the every-six-hour breathing treatments.\" : The original is a sentence fragment lacking a subject and verb, and \"every six-hour breathing treatments\" needs an article and hyphenation for correct grammatical construction.",
+    "correction": "Prednisone was prescribed to be used for 3 days if symptoms of cough and congestion persist after the Z-Pak and the every-six-hour breathing treatments. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "This is a sentence fragment missing an explicit subject and verb, which makes it grammatically incomplete.",
     "error": "\"Prescribed triamcinolone ointment to manage the rash.\" -",
-    "correction": "\"Triamcinolone ointment was prescribed to manage the rash.\" : This is a sentence fragment missing an explicit subject and verb, which makes it grammatically incomplete.",
+    "correction": "Triamcinolone ointment was prescribed to manage the rash. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The verb tense shifts incorrectly; \"Instructed\" should match the past tense \"Provided\" for grammatical consistency.",
     "error": "\"Provided a 90-day supply of Zoloft 100 mg. Instruct her to contact the office if there are any issues with the medication.\" -",
-    "correction": "\"Provided a 90-day supply of Zoloft 100 mg. Instructed her to contact the office if there are any issues with the medication.\": The verb tense shifts incorrectly; \"Instructed\" should match the past tense \"Provided\" for grammatical consistency.",
+    "correction": "Provided a 90-day supply of Zoloft 100 mg. Instructed her to contact the office if there are any issues with the medication.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is a fragment lacking an explicit subject and finite verb, so it should be converted to a complete passive-voice sentence.",
     "error": "\"Provided a prescription for Keflex (cephalexin) 1.5 teaspoons twice daily for 10 days; if significant improvement is observed after 7 days, the medication can be discontinued.\" -",
-    "correction": "\"A prescription for Keflex (cephalexin) 1.5 teaspoons twice daily for 10 days was provided; if significant improvement is observed after 7 days, the medication can be discontinued.\": The sentence is a fragment lacking an explicit subject and finite verb, so it should be converted to a complete passive-voice sentence.",
+    "correction": "A prescription for Keflex (cephalexin) 1.5 teaspoons twice daily for 10 days was provided; if significant improvement is observed after 7 days, the medication can be discontinued.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The verb tense and structure are not parallel; \"emphasized\" should match \"provided.\"",
     "error": "\"Provided a prescription for nystatin ointment for both the infant's diaper area and the mother's use, and emphasize hygiene and cleaning.\" -",
-    "correction": "\"Provided a prescription for nystatin ointment for both the infant's diaper area and the mother's use, and emphasized hygiene and cleaning.\": The verb tense and structure are not parallel; \"emphasized\" should match \"provided.\"",
+    "correction": "Provided a prescription for nystatin ointment for both the infant's diaper area and the mother's use, and emphasized hygiene and cleaning.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is a fragment because it lacks an explicit subject.",
     "error": "\"Provided a referral to a pediatric psychiatrist, and encouraged her to schedule an appointment.\" -",
-    "correction": "\"We provided a referral to a pediatric psychiatrist and encouraged her to schedule an appointment.\" : The sentence is a fragment because it lacks an explicit subject.",
+    "correction": "We provided a referral to a pediatric psychiatrist and encouraged her to schedule an appointment. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "This is a sentence fragment lacking an explicit subject; adding \"The second dose was\" makes it a complete sentence.",
     "error": "\"Provided the second dose in tablet form, which can be crushed and mixed with yogurt or applesauce for easier administration.\" -",
-    "correction": "\"The second dose was provided in tablet form, which can be crushed and mixed with yogurt or applesauce for easier administration.\" : This is a sentence fragment lacking an explicit subject; adding \"The second dose was\" makes it a complete sentence.",
+    "correction": "The second dose was provided in tablet form, which can be crushed and mixed with yogurt or applesauce for easier administration. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is missing a subject (\"He\") and needs the definite article \"the\" before \"HPV vaccine.\"",
     "error": "\"Received the Tdap, MenQuadfi, and influenza vaccines today but can wait on HPV vaccine.\" -",
-    "correction": "\"He received the Tdap, MenQuadfi, and influenza vaccines today but can wait on the HPV vaccine.\"",
+    "correction": "He received the Tdap, MenQuadfi, and influenza vaccines today but can wait on the HPV vaccine.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The sentence lacks an explicit subject, making it a fragment rather than a complete sentence.",
     "error": "\"Recommend Aveeno baby eczema nighttime balm in the tub container, as it is slightly thicker, or Aquaphor.\" -",
-    "correction": "\"I recommend Aveeno baby eczema nighttime balm in the tub container, as it is slightly thicker, or Aquaphor.\" ",
+    "correction": "I recommend Aveeno baby eczema nighttime balm in the tub container, as it is slightly thicker, or Aquaphor. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The verb tense should match the surrounding past-tense verbs (\"Prescribed,\" \"Emphasized,\" \"Advised\") in this section.",
     "error": "\"Recommend Mucinex to help clear mucus.\" -",
-    "correction": "\"Recommended Mucinex to help clear mucus.\"",
+    "correction": "Recommended Mucinex to help clear mucus.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The verbs should be in the same tense and form for parallel structure.",
     "error": "\"Recommend regular physical activity and encouraged outdoor physical activity\" -",
-    "correction": "\"Recommend regular physical activity and encourage outdoor physical activity\" ",
+    "correction": "Recommend regular physical activity and encourage outdoor physical activity ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The verb pattern \"recommend [person] to [verb]\" is incorrect; it should be \"recommend that [person] [bare infinitive]\" and \"her diet\" clarifies whose diet.",
     "error": "\"Recommend the mother to eliminate dairy from the diet for a period of 2 weeks\" -",
-    "correction": "\"Recommend that the mother eliminate dairy from her diet for a period of 2 weeks\" ",
+    "correction": "Recommend that the mother eliminate dairy from her diet for a period of 2 weeks ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The verb tense is inconsistent with the surrounding past-tense narrative and should be in the past tense.",
     "error": "\"Recommend water consumption following administration of the medication.\" -",
-    "correction": "\"Recommended water consumption following administration of the medication.\"",
+    "correction": "Recommended water consumption following administration of the medication.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " This is a sentence fragment lacking a clear subject; changing the verb form makes it a complete directive sentence.",
     "error": "\"Recommended exposure to cool, humidified air or steam inhalation.\" -",
-    "correction": "\"Recommend exposure to cool, humidified air or steam inhalation.\" ",
+    "correction": "Recommend exposure to cool, humidified air or steam inhalation. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The original sentence is missing a clear subject for the verb \"recommended,\" making it grammatically incomplete.",
     "error": "\"Recommended starting the Qvar inhaler at the onset of cold, cough, or influenza-like symptoms and continuing its use for 1 to 2 weeks in order to avoid any exacerbation.\" -",
-    "correction": "\"It is recommended to start the Qvar inhaler at the onset of cold, cough, or influenza-like symptoms and to continue its use for 1 to 2 weeks in order to avoid any exacerbation.\" ",
+    "correction": "It is recommended to start the Qvar inhaler at the onset of cold, cough, or influenza-like symptoms and to continue its use for 1 to 2 weeks in order to avoid any exacerbation. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The sentence is missing a clear subject for \"was declined\"; adding \"it\" clarifies what was declined.",
     "error": "\"Recommended the influenza vaccine at this visit but was declined.\" -",
-    "correction": "\"Recommended the influenza vaccine at this visit, but it was declined.\" ",
+    "correction": "Recommended the influenza vaccine at this visit, but it was declined. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The verb \"recommend\" should be followed by \"that\" plus a clause, not \"recommend someone to do something.\"",
     "error": "\"Recommended the parents to continue introducing new foods into her diet while avoiding unhealthy options such as goldfish crackers.\" -",
-    "correction": "\"Recommended that the parents continue introducing new foods into her diet while avoiding unhealthy options such as goldfish crackers.\" ",
+    "correction": "Recommended that the parents continue introducing new foods into her diet while avoiding unhealthy options such as goldfish crackers. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The sentence is missing a clear subject for the verbs \"recommended\" and \"counseled.\"",
     "error": "\"Recommended to restrict screen time to 2 hours daily and counseled on maintaining balanced control.\" -",
-    "correction": "\"It was recommended to restrict screen time to 2 hours daily and she was counseled on maintaining balanced control.\" ",
+    "correction": "It was recommended to restrict screen time to 2 hours daily and she was counseled on maintaining balanced control. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The original sentence lacks a clear subject for \"Recommended,\" so adding \"It was\" and \"her\" clarifies the grammar.",
     "error": "\"Recommended to wean off the formula two weeks before her first birthday by gradually introducing whole milk, starting with 1 ounce and increasing incrementally.\" -",
-    "correction": "\"It was recommended to wean her off the formula two weeks before her first birthday by gradually introducing whole milk, starting with 1 ounce and increasing incrementally.\" ",
+    "correction": "It was recommended to wean her off the formula two weeks before her first birthday by gradually introducing whole milk, starting with 1 ounce and increasing incrementally. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The original is a sentence fragment lacking an explicit subject and verb.",
     "error": "\"Recommended using Vaseline or Aquaphor as a barrier cream.\" -",
-    "correction": "\"It is recommended to use Vaseline or Aquaphor as a barrier cream.\" ",
+    "correction": "It is recommended to use Vaseline or Aquaphor as a barrier cream. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The original sentence lacks an explicit subject and verb form, making it a sentence fragment rather than a complete sentence.",
     "error": "\"Recommended yogurt or probiotics to mitigate these side effects.\" -",
-    "correction": "\"Yogurt or probiotics were recommended to mitigate these side effects.\" ",
+    "correction": "Yogurt or probiotics were recommended to mitigate these side effects. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The sentence is a fragment lacking an explicit subject and needs a subject and proper clause structure.",
     "error": "\"Sent prescription to the pharmacy and it should be ready within a few hours.\" -",
-    "correction": "\"I sent the prescription to the pharmacy, and it should be ready within a few hours.\" or \"The prescription was sent to the pharmacy, and it should be ready within a few hours.\"",
+    "correction": "I sent the prescription to the pharmacy, and it should be ready within a few hours. or \"The prescription was sent to the pharmacy, and it should be ready within a few hours.\"",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The verbs in the paired construction should be parallel in form (\"have\" and \"feel\").",
     "error": "\"She can attend school as long as she does not have a fever or feels unwell.\" -",
-    "correction": "\"She can attend school as long as she does not have a fever or feel unwell.\"",
+    "correction": "She can attend school as long as she does not have a fever or feel unwell.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "\"Google\" is a proper noun and should be capitalized even when used as a verb.",
     "error": "\"she can google other potassium-rich foods as well.\" -",
-    "correction": "\"she can Google other potassium-rich foods as well.\"",
+    "correction": "she can Google other potassium-rich foods as well.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The clause lacks an explicit subject and verb, making the sentence grammatically incomplete.",
     "error": "\"so recommended a transition from Zoloft to Lexapro.\" -",
-    "correction": "\"so a transition from Zoloft to Lexapro was recommended.\" ",
+    "correction": "so a transition from Zoloft to Lexapro was recommended. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The clause \"sent prescription\" is a sentence fragment and needs a subject and auxiliary verb for correct grammar.",
     "error": "\"Start albuterol nebulizer treatments every 6 hours (four times a day), then gradually reduce to three, two, and then one time per day over a week as symptoms improve; sent prescription.\" -",
-    "correction": "\"Start albuterol nebulizer treatments every 6 hours (four times a day), then gradually reduce to three, two, and then one time per day over a week as symptoms improve; a prescription was sent.\" ",
+    "correction": "Start albuterol nebulizer treatments every 6 hours (four times a day), then gradually reduce to three, two, and then one time per day over a week as symptoms improve; a prescription was sent. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The past-tense verb \"sent\" is inconsistent with the imperative structure of the sentence and should match the intended tense/voice.",
     "error": "\"Start amoxicillin for 7 days to treat the infection and prevent the left ear from worsening; sent the prescription to the pharmacy.\" -",
-    "correction": "\"Start amoxicillin for 7 days to treat the infection and prevent the left ear from worsening; send the prescription to the pharmacy.\" or \"…; I have sent the prescription to the pharmacy.\"",
+    "correction": "Start amoxicillin for 7 days to treat the infection and prevent the left ear from worsening; send the prescription to the pharmacy. or \"…; I have sent the prescription to the pharmacy.\"",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The verb \"suggest\" requires \"that\" with a clause and not an infinitive (\"to call\") in this context.",
     "error": "\"Suggested the mother to call the neurosurgery department herself if she does not get a call from them.\" -",
-    "correction": "\"Suggested that the mother call the neurosurgery department herself if she does not get a call from them.\" ",
+    "correction": "Suggested that the mother call the neurosurgery department herself if she does not get a call from them. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The word order and missing verb make the sentence grammatically incorrect.",
     "error": "\"The condition for the first couple of days is usually worse but expected to improve as the treatment takes effect.\" -",
-    "correction": "\"The condition is usually worse for the first couple of days but is expected to improve as the treatment takes effect.\"",
+    "correction": "The condition is usually worse for the first couple of days but is expected to improve as the treatment takes effect.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The plural subject \"criteria\" requires the plural verb \"include.\"",
     "error": "\"The criteria for tube placement includes 3 ear infections within a 6-month period or 4 within a year\" -",
-    "correction": "\"The criteria for tube placement include 3 ear infections within a 6-month period or 4 within a year\"",
+    "correction": "The criteria for tube placement include 3 ear infections within a 6-month period or 4 within a year",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The verb phrase \"the provider reassured\" is missing an object; using the passive \"was reassured\" correctly indicates that the provider received reassurance.",
     "error": "\"The hematology attending explained that the results would be monitored and direct contact would be made with the provider once available, and the provider reassured that Dr. Kxxx would be kept informed.\" -",
-    "correction": "\"The hematology attending explained that the results would be monitored and direct contact would be made with the provider once available, and the provider was reassured that Dr. Kxxx would be kept informed.\" ",
+    "correction": "The hematology attending explained that the results would be monitored and direct contact would be made with the provider once available, and the provider was reassured that Dr. Kxxx would be kept informed. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The clause after the comma is missing a clear subject for \"advised\" and needs proper verb phrasing.",
     "error": "\"The squeezable food pouches are not encouraged, and advised to allow her to continue eating the purees including fruits and vegetables, pancakes, and eggs.\" -",
-    "correction": "\"The squeezable food pouches are not encouraged, and the parents were advised to allow her to continue eating purees, including fruits and vegetables, pancakes, and eggs.\" ",
+    "correction": "The squeezable food pouches are not encouraged, and the parents were advised to allow her to continue eating purees, including fruits and vegetables, pancakes, and eggs. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": "The subject is singular, so the verb should be \"is\" rather than \"are,\" and a comma is needed before \"is reported\" to separate the clause clearly.",
     "error": "\"Urinary frequency with a persistent urge to urinate and sensation of incomplete bladder emptying, but without pain or other symptoms of a urinary tract infection (UTI) are reported.\" -",
-    "correction": "\"Urinary frequency with a persistent urge to urinate and sensation of incomplete bladder emptying, but without pain or other symptoms of a urinary tract infection (UTI), is reported.\"",
+    "correction": "Urinary frequency with a persistent urge to urinate and sensation of incomplete bladder emptying, but without pain or other symptoms of a urinary tract infection (UTI), is reported.",
     "section": "ASSESSMENT AND PLAN"
   },
   {
     "reasoning": " The sentence is missing a subject (\"they were\") before \"advised,\" making it a grammatical fragment.",
     "error": "\"With the upcoming holiday, advised that he should not be held by anyone who is immunosuppressed, such as elderly grandparents, newborn babies, or individuals receiving chemotherapy.\" -",
-    "correction": "\"With the upcoming holiday, they were advised that he should not be held by anyone who is immunosuppressed, such as elderly grandparents, newborn babies, or individuals receiving chemotherapy.\" ",
+    "correction": "With the upcoming holiday, they were advised that he should not be held by anyone who is immunosuppressed, such as elderly grandparents, newborn babies, or individuals receiving chemotherapy. ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
@@ -6326,7 +6322,7 @@ const SV_ERRORS = [
   {
     "reasoning": "The verb \"is\" is missing, resulting in an incomplete sentence.",
     "error": "\"Follow up:  The follow-up appointment scheduled for 2 months post-procedure to assess progress and determine if omeprazole dosage can be reduced to once daily.\" ",
-    "correction": " \"Follow up:  The follow-up appointment is scheduled for 2 months post-procedure to assess progress and determine if omeprazole dosage can be reduced to once daily.\"",
+    "correction": " \"Follow up:   The follow-up appointment is scheduled for 2 months post-procedure to assess progress and determine if omeprazole dosage can be reduced to once daily.\"",
     "section": "ASSESSMENT AND PLAN"
   },
   {
@@ -6350,7 +6346,7 @@ const SV_ERRORS = [
   {
     "reasoning": " The verb form \"follow up\" is correct, but the numeral \"3\" should be written as \"three\" for consistency with standard medical writing conventions.",
     "error": "\"Follow-up:  Follow up in 3 months or sooner if needed.\" ",
-    "correction": " \"Follow-up:  Follow up in three months or sooner if needed.\" ",
+    "correction": " \"Follow-up:   Follow up in three months or sooner if needed.\" ",
     "section": "ASSESSMENT AND PLAN"
   },
   {
@@ -8510,145 +8506,145 @@ const SV_ERRORS = [
   {
     "reasoning": " The subject \"he\" is missing, creating a grammatical error in the clause.",
     "error": "\"..., so may have been exposed to many things.\" -",
-    "correction": "\"..., so he may have been exposed to many things.\" ",
+    "correction": "..., so he may have been exposed to many things. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The verb \"informed\" is missing an object (e.g., \"them\" or \"the family\") to indicate who was informed.",
     "error": "\"Another physician informed that the medication the child had been taking could cause bowel issues and leg pain.\" -",
-    "correction": "\"Another physician informed them that the medication the child had been taking could cause bowel issues and leg pain.\" ",
+    "correction": "Another physician informed them that the medication the child had been taking could cause bowel issues and leg pain. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The verb tense is inconsistent; \"has also been experiencing\" (present perfect continuous) does not match the past time reference \"at that time.\"",
     "error": "\"His sister has also been experiencing vomiting at that time.\" -",
-    "correction": "\"His sister also experienced vomiting at that time.\" ",
+    "correction": "His sister also experienced vomiting at that time. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The subject \"he\" is missing after \"so,\" creating a grammatical error.",
     "error": "\"however, he is a student at Echo Park and his girlfriend is a nurse, so may have been exposed to many things.\" -",
-    "correction": "\"however, he is a student at Echo Park and his girlfriend is a nurse, so he may have been exposed to many things.\"",
+    "correction": "however, he is a student at Echo Park and his girlfriend is a nurse, so he may have been exposed to many things.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The clause is missing the subject \"he,\" resulting in a grammatical error.",
     "error": "\"However, he is a student at Echo Park, and his girlfriend is a nurse, so may have been exposed to many things.\" -",
-    "correction": "\"However, he is a student at Echo Park, and his girlfriend is a nurse, so he may have been exposed to many things.\"",
+    "correction": "However, he is a student at Echo Park, and his girlfriend is a nurse, so he may have been exposed to many things.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The list is incorrectly punctuated and missing a conjunction, and the clause needs an explicit subject for correct grammar.",
     "error": "\"including fruits, vegetables, and meat, dairy, but does not consume milk.\" -",
-    "correction": "\"including fruits, vegetables, meat, and dairy, but she does not consume milk.\" ",
+    "correction": "including fruits, vegetables, meat, and dairy, but she does not consume milk. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The verb tense should be consistent with the present context, and \"a couple times\" should be \"a couple of times.\"",
     "error": "\"Minor headaches are occasionally experienced, which coincided with his abdominal pain a couple times.\" -",
-    "correction": "\"Minor headaches are occasionally experienced, which have coincided with his abdominal pain a couple of times.\"",
+    "correction": "Minor headaches are occasionally experienced, which have coincided with his abdominal pain a couple of times.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The subject of the second clause is missing; \"he\" is needed for correct parallel structure.",
     "error": "\"Most of his time is spent at home playing games for enjoyment and is considering resuming swimming.\" -",
-    "correction": "\"Most of his time is spent at home playing games for enjoyment, and he is considering resuming swimming.\" ",
+    "correction": "Most of his time is spent at home playing games for enjoyment, and he is considering resuming swimming. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The subject of the second clause (\"states\") is missing and needs \"he\" for correct subject-verb agreement.",
     "error": "\"Occasional feelings of stress or anxiety are reported but states that his current symptoms do not feel similar.\" -",
-    "correction": "\"Occasional feelings of stress or anxiety are reported, but he states that his current symptoms do not feel similar.\" ",
+    "correction": "Occasional feelings of stress or anxiety are reported, but he states that his current symptoms do not feel similar. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The second clause lacks a subject, resulting in faulty parallel structure.",
     "error": "\"Pressure headaches continue to be experienced, primarily in the forehead area, and occasional ear cloudiness.\" -",
-    "correction": "\"Pressure headaches continue to be experienced, primarily in the forehead area, and he has occasional ear cloudiness.\" ",
+    "correction": "Pressure headaches continue to be experienced, primarily in the forehead area, and he has occasional ear cloudiness. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The verb should agree with the singular subject \"Pumps once daily,\" so \"yields\" is required.",
     "error": "\"Pumps once daily yield about 6 ounces of milk per breast.\" -",
-    "correction": "\"Pumps once daily yields about 6 ounces of milk per breast.\"",
+    "correction": "Pumps once daily yields about 6 ounces of milk per breast.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The verb form is incorrect; it should be in the passive voice to indicate testing performed on her.",
     "error": "\"She does not want to check for influenza and COVID-19.\" -",
-    "correction": "\"She does not want to be checked for influenza and COVID-19.\"",
+    "correction": "She does not want to be checked for influenza and COVID-19.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The verbs in the list should be parallel; “watching TV, phone or iPad” is grammatically awkward because “watching” does not appropriately apply to “phone or iPad” without “using.”",
     "error": "\"She enjoys her free time watching TV, phone or iPad.\" -",
-    "correction": "\"She enjoys her free time watching TV and using her phone or iPad.\"",
+    "correction": "She enjoys her free time watching TV and using her phone or iPad.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The repeated verb \"had\" makes the sentence awkward; removing the second \"had\" corrects the grammar.",
     "error": "\"She had her 18-month checkup 2 months ago and had her 20-month visit.\" -",
-    "correction": "\"She had her 18-month checkup 2 months ago and her 20-month visit.\" ",
+    "correction": "She had her 18-month checkup 2 months ago and her 20-month visit. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " \"Healthy\" is an adjective; the adverb \"healthily\" is grammatically correct when modifying \"eating.\"",
     "error": "\"She has been eating healthy.\" -",
-    "correction": "\"She has been eating healthily.\" ",
+    "correction": "She has been eating healthily. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The second clause is missing a subject, creating a grammatical fragment/dangling modifier.",
     "error": "\"Sleep:  His sleep pattern is regular, typically retires between 8:00 and 9:00 PM.\" ",
-    "correction": " His sleep pattern is regular, and he typically retires between 8:00 and 9:00 PM.\" ",
+    "correction": " His sleep pattern is regular, and he typically retires between 8:00 and 9:00 PM.\"",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The subject \"he\" is missing, making the clause grammatically incomplete.",
     "error": "\"so may have been exposed to many things.\" -",
-    "correction": "\"so he may have been exposed to many things.\" ",
+    "correction": "so he may have been exposed to many things. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The verb phrase is missing the auxiliary \"has\" to form the present perfect tense, matching the surrounding context.",
     "error": "\"started to grab objects.\" -",
-    "correction": "\"has started to grab objects.\"",
+    "correction": "has started to grab objects.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The original is a sentence fragment lacking a clear subject; adding \"He had\" corrects this.",
     "error": "\"Temperatures ranging from the mid-99s to 100.7 degrees Fahrenheit were recorded at the daycare.\" -",
-    "correction": "\"He had temperatures ranging from the mid-99s to 100.7 degrees Fahrenheit recorded at the daycare.\" ",
+    "correction": "He had temperatures ranging from the mid-99s to 100.7 degrees Fahrenheit recorded at the daycare. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " Verb tense should be consistent (past tense) within the sentence.",
     "error": "\"The child experienced itching throughout the night but reports no pain.\" -",
-    "correction": "\"The child experienced itching throughout the night but reported no pain.\" ",
+    "correction": "The child experienced itching throughout the night but reported no pain. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " This is a comma splice and is missing the subject \"she\" in the second clause.",
     "error": "\"The mother asked if this is a cause for concern, however, reports multiple wet diapers during the day.\" -",
-    "correction": "\"The mother asked if this is a cause for concern; however, she reports multiple wet diapers during the day.\" ",
+    "correction": "The mother asked if this is a cause for concern; however, she reports multiple wet diapers during the day. ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "Subject-verb agreement error; \"1 cat\" is singular and should take \"is.\"",
     "error": "\"There are 1 cat and 2 dogs at home.\" -",
-    "correction": "\"There is 1 cat and 2 dogs at home.\"",
+    "correction": "There is 1 cat and 2 dogs at home.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The plural subject \"Tums\" requires the plural verb \"have\" for correct subject-verb agreement.",
     "error": "\"Tums has been taken for relief\" -",
-    "correction": "\"Tums have been taken for relief\"",
+    "correction": "Tums have been taken for relief",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": "The verb should be singular (\"manages\") to agree with the singular subject \"nasal spray.\"",
     "error": "\"which effectively manage her symptoms.\" -",
-    "correction": "\"which effectively manages her symptoms.\"",
+    "correction": "which effectively manages her symptoms.",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -9276,15 +9272,9 @@ const SV_ERRORS = [
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
-    "reasoning": " The use of the article \"a\" before \"STD testing\" is incorrect, and the verb phrase \"to have\" is needed for correct grammar.",
-    "error": "\"She does not wish a STD testing today.\" ",
-    "correction": " \"She does not wish to have STD testing today.\" ",
-    "section": "HISTORY OF PRESENT ILLNESS"
-  },
-  {
     "reasoning": " The verb tense should be present perfect with \"for the past 6 months,\" and the original sentence is a comma splice and missing an explicit subject in the second clause.",
     "error": "\"Hobbies:  Lacks exercise for the past 6 months, however, attends spin classes once a week or every other week.\" ",
-    "correction": " \"Hobbies:  Has lacked exercise for the past 6 months; however, she attends spin classes once a week or every other week.\" ",
+    "correction": " \"Hobbies:   Has lacked exercise for the past 6 months; however, she attends spin classes once a week or every other week.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -9302,7 +9292,7 @@ const SV_ERRORS = [
   {
     "reasoning": "The past continuous form \"was watching\" is needed for correct verb tense.",
     "error": "\"could have increased as she watching Law & Order: SVU at that time.\" ",
-    "correction": " \"could have increased as she was watching Law & Order:  SVU at that time.\"",
+    "correction": " \"could have increased as she was watching Law & Order:   SVU at that time.\"",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -9356,7 +9346,7 @@ const SV_ERRORS = [
   {
     "reasoning": " The subject of \"goes to bed\" is missing; \"his\" and \"he\" are needed for correct subject-verb agreement and clarity.",
     "error": "\"Sleep:  Sleep pattern is stable and goes to bed around midnight.\" ",
-    "correction": " \"Sleep:  His sleep pattern is stable, and he goes to bed around midnight.\" ",
+    "correction": " \"Sleep:   His sleep pattern is stable, and he goes to bed around midnight.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -9368,7 +9358,7 @@ const SV_ERRORS = [
   {
     "reasoning": " The original is a comma splice and sentence fragment; adding a subject and conjunction creates correct grammar.",
     "error": "\"Living Condition:  Recently relocated, wife and son are his only support system\" ",
-    "correction": " \"Living Condition:  He recently relocated, and his wife and son are his only support system\" ",
+    "correction": " \"Living Condition:   He recently relocated, and his wife and son are his only support system\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -9548,7 +9538,7 @@ const SV_ERRORS = [
   {
     "reasoning": " The second sentence is a sentence fragment and needs a subject to be grammatically complete.",
     "error": "\"Occupation:  She was a merchant. Retired from a family-owned business in heating and cooling\" ",
-    "correction": " \"Occupation:  She was a merchant. She retired from a family-owned business in heating and cooling\" ",
+    "correction": " \"Occupation:   She was a merchant. She retired from a family-owned business in heating and cooling\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -9956,13 +9946,13 @@ const SV_ERRORS = [
   {
     "reasoning": " The verb \"does\" creates incorrect parallel structure; both hobbies should be listed as nouns.",
     "error": "\"Hobbies:  Dancing and does weightlifting.\" ",
-    "correction": " \"Hobbies:  Dancing and weightlifting.\" ",
+    "correction": " \"Hobbies:   Dancing and weightlifting.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
     "reasoning": " The original sentence is a fragment with inconsistent structure; adding a subject clarifies the grammar.",
     "error": "\"Diet:  High intake of candy and consumes a significant amount of Diet Pepsi.\" ",
-    "correction": " \"Diet:  High intake of candy, and he consumes a significant amount of Diet Pepsi.\" ",
+    "correction": " \"Diet:   High intake of candy, and he consumes a significant amount of Diet Pepsi.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -9992,7 +9982,7 @@ const SV_ERRORS = [
   {
     "reasoning": "Incorrect verb form; \"tries\" must be followed by \"to maintain.\"",
     "error": "\"Diet:  She tries maintains a healthy diet.\" ",
-    "correction": " \"Diet:  She tries to maintain a healthy diet.\"",
+    "correction": " \"Diet:   She tries to maintain a healthy diet.\"",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -10118,7 +10108,7 @@ const SV_ERRORS = [
   {
     "reasoning": " Missing auxiliary verb \"has\" makes the phrase grammatically incomplete.",
     "error": "\"Recreational Drugs:  Not reduced marijuana use.\" ",
-    "correction": " \"Recreational Drugs: Has not reduced marijuana use.\" ",
+    "correction": " \"Recreational Drugs:  Has not reduced marijuana use.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -10160,7 +10150,7 @@ const SV_ERRORS = [
   {
     "reasoning": " The verb tense is incorrect for the current context; \"has not attended\" is the correct present perfect form.",
     "error": "\"Hobbies:  Golfing and had not attended the gym for about 2 weeks.\" ",
-    "correction": " \"Hobbies:  Golfing and has not attended the gym for about 2 weeks.\" ",
+    "correction": " \"Hobbies:   Golfing and has not attended the gym for about 2 weeks.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -10238,7 +10228,7 @@ const SV_ERRORS = [
   {
     "reasoning": " The phrase needs clearer structure and subject-verb agreement to show that only the 28-year-old is adopted.",
     "error": "\"Living condition:  Lives with her husband. She has 3 children aged 46, 43 and 28 who is adopted.\" ",
-    "correction": " \"Living condition:  Lives with her husband. She has 3 children aged 46, 43, and 28, who is adopted.\" or \"…and a 28-year-old who is adopted.\" ",
+    "correction": " \"Living condition:   Lives with her husband. She has 3 children aged 46, 43, and 28, who is adopted.\" or \"…and a 28-year-old who is adopted.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -10262,7 +10252,7 @@ const SV_ERRORS = [
   {
     "reasoning": " The word order is incorrect and the verb tense is inappropriate for duration.",
     "error": "\"Living Condition:  Lives in the same for 5 years house with wife and two dogs.\" ",
-    "correction": " \"Living Condition:  Has lived in the same house for 5 years with wife and two dogs.\" ",
+    "correction": " \"Living Condition:   Has lived in the same house for 5 years with wife and two dogs.\" ",
     "section": "HISTORY OF PRESENT ILLNESS"
   },
   {
@@ -10328,7 +10318,7 @@ const SV_ERRORS = [
   {
     "reasoning": " The verb \"were\" is missing, causing an incomplete sentence.",
     "error": "\"Feet together, bending forward to touch the toes, and standing upright all performed without difficulty.\" -",
-    "correction": "\"Feet together, bending forward to touch the toes, and standing upright were all performed without difficulty.\" ",
+    "correction": "Feet together, bending forward to touch the toes, and standing upright were all performed without difficulty. ",
     "section": "PHYSICAL EXAM"
   },
   {
@@ -10340,37 +10330,37 @@ const SV_ERRORS = [
   {
     "reasoning": "The verb \"was\" is missing, making the sentence grammatically incomplete.",
     "error": "\"Musculoskeletal:  A slight spinal asymmetry noted.\" -> ",
-    "correction": "\"Musculoskeletal:  A slight spinal asymmetry was noted.\"",
+    "correction": "Musculoskeletal:  A slight spinal asymmetry was noted.",
     "section": "PHYSICAL EXAM"
   },
   {
     "reasoning": "Verb tense should be consistent with the rest of the physical exam, which is written in the present tense.",
     "error": "\"Nails looked great.\" -",
-    "correction": "\"Nails look great.\"",
+    "correction": "Nails look great.",
     "section": "PHYSICAL EXAM"
   },
   {
     "reasoning": "The phrase \"and air well\" is grammatically incomplete and needs a verb such as \"moves\" to form a correct clause.",
     "error": "\"Lungs:  Lungs are clear and air well.\" ",
-    "correction": " \"Lungs:  Lungs are clear and air moves well.\"",
+    "correction": " \"Lungs:   Lungs are clear and air moves well.\"",
     "section": "PHYSICAL EXAM"
   },
   {
     "reasoning": " The original phrasing is grammatically awkward; subject and verb order should be corrected.",
     "error": "\"Extremities:  Present edema\" ",
-    "correction": " \"Extremities:  Edema present\" or \"Extremities: Edema is present\" ",
+    "correction": " \"Extremities:   Edema present\" or \"Extremities:  Edema is present\" ",
     "section": "PHYSICAL EXAM"
   },
   {
     "reasoning": " Subject-verb agreement is incorrect (\"elicit\" should be \"elicits\") and \"sinus\" should be plural with an article for correct usage.",
     "error": "\"Nose:  No significant drainage noted. Palpation over sinus elicit pain.\" ",
-    "correction": " \"Nose:  No significant drainage noted. Palpation over the sinuses elicits pain.\" ",
+    "correction": " \"Nose:   No significant drainage noted. Palpation over the sinuses elicits pain.\" ",
     "section": "PHYSICAL EXAM"
   },
   {
     "reasoning": "The phrase \"significant decreased\" is grammatically incorrect; it should be \"significantly decreased\" (adverb + adjective) or \"significant decrease\" (adjective + noun), and a definite article before \"right\" improves clarity.",
     "error": "\"Neck:  Significant decreased range of motion, right and left lateral with right being worse than the left.\" ",
-    "correction": " \"Neck:  Significantly decreased range of motion, right and left lateral, with the right being worse than the left.\" or \"Neck:  Significant decrease in range of motion, right and left lateral, with the right being worse than the left.\"",
+    "correction": " \"Neck:   Significantly decreased range of motion, right and left lateral, with the right being worse than the left.\" or \"Neck:   Significant decrease in range of motion, right and left lateral, with the right being worse than the left.\"",
     "section": "PHYSICAL EXAM"
   },
   {
@@ -10448,13 +10438,13 @@ const SV_ERRORS = [
   {
     "reasoning": " The word order is awkward and omits a clear verb linking the subject and role.",
     "error": "\"Occupations:  Pilot currently for high school and elementary students.\" ",
-    "correction": " \"Occupations:  Currently a pilot for high school and elementary students.\" ",
+    "correction": " \"Occupations:   Currently a pilot for high school and elementary students.\" ",
     "section": "SOCIAL HISTORY"
   },
   {
     "reasoning": " The auxiliary verb \"has\" is needed for correct present perfect tense.",
     "error": "\"Recreational Drugs: Never been a drug addict\" ",
-    "correction": " \"Recreational Drugs:  Has never been a drug addict\" ",
+    "correction": " \"Recreational Drugs:   Has never been a drug addict\" ",
     "section": "SOCIAL HISTORY"
   },
   {
@@ -10466,14 +10456,14 @@ const SV_ERRORS = [
   {
     "reasoning": "The pronoun \"they\" does not agree with the previously specified female subject and should be \"she\" for grammatical consistency.",
     "error": "\"Diet:  The patient tries to watch what they eat and has noticed symptoms related to dairy consumption.\" ",
-    "correction": " \"Diet:  The patient tries to watch what she eats and has noticed symptoms related to dairy consumption.\"",
+    "correction": " \"Diet:   The patient tries to watch what she eats and has noticed symptoms related to dairy consumption.\"",
     "section": "SOCIAL HISTORY"
   },
   {
     "reasoning": " The clause after the colon is a fragment missing the subject \"she.\"",
     "error": "\"Coffee/Tea/Caffeine-containing Drinks:  used to drink coffee but stopped due to its effect on blood pressure.\" ",
-    "correction": " \"Coffee/Tea/Caffeine-containing Drinks:  She used to drink coffee but stopped due to its effect on blood pressure.\" ",
+    "correction": " \"Coffee/Tea/Caffeine-containing Drinks:   She used to drink coffee but stopped due to its effect on blood pressure.\" ",
     "section": "SOCIAL HISTORY"
   }
-]
-;
+];
+

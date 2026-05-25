@@ -2,111 +2,226 @@
    MedGrammar — Application Logic
    ============================================= */
 
-// ─── Imperative Language Quiz Data (based on tutorial content) ───
+// ─── Imperative Language Quiz Data (4 options with paired distractors) ───
 const IMPERATIVE_QUIZ = [
   {
-    question: "Which phrasing uses the preferred gentle imperative tone for a clinical plan?",
-    correct: "Continue current antihypertensive medication.",
-    incorrect: "Current antihypertensive medication should be continued.",
-    reason: "The imperative tone ('Continue...') is preferred in plan documentation because it begins with an action verb, is concise, and directly states the intended plan.",
+    question: "Which phrasing best uses the gentle imperative tone for a clinical plan?",
+    options: [
+      { text: "Continue current antihypertensive medication.", correct: true },
+      { text: "Continue with the current antihypertensive medication as tolerated.", correct: false },
+      { text: "Current antihypertensive medication should be continued.", correct: false },
+      { text: "Current antihypertensive medication is to be continued.", correct: false }
+    ],
+    reason: "The correct imperative is concise and starts with an action verb. The second option adds unnecessary words. The last two use passive constructions which are less preferred.",
     section: "PLAN"
   },
   {
-    question: "Which phrasing uses the preferred gentle imperative tone?",
-    correct: "Monitor blood glucose levels daily.",
-    incorrect: "Blood glucose levels should be monitored daily.",
-    reason: "Starting with the action verb 'Monitor' makes the instruction direct and clear, which is the preferred imperative style for clinical plans.",
+    question: "Which is the most appropriate patient-facing imperative phrasing?",
+    options: [
+      { text: "Monitor blood glucose levels daily.", correct: true },
+      { text: "Monitor and track blood glucose levels on a daily basis.", correct: false },
+      { text: "Blood glucose levels should be monitored daily.", correct: false },
+      { text: "Blood glucose levels are to be monitored on a daily basis.", correct: false }
+    ],
+    reason: "'Monitor blood glucose levels daily' is the ideal imperative — concise, direct, action-verb-first. The second adds verbosity. The last two are passive constructions.",
     section: "PLAN"
   },
   {
-    question: "Which phrasing is more appropriate for patient-facing documentation?",
-    correct: "Encourage smoking cessation.",
-    incorrect: "The patient must stop smoking immediately.",
-    reason: "The imperative phrasing avoids sounding judgmental or punitive and is more appropriate for records patients may access directly.",
+    question: "Which phrasing is most appropriate for patient-facing documentation regarding smoking?",
+    options: [
+      { text: "Encourage smoking cessation.", correct: true },
+      { text: "Encourage the patient to consider smoking cessation strategies.", correct: false },
+      { text: "The patient must stop smoking immediately.", correct: false },
+      { text: "The patient is required to cease smoking at this time.", correct: false }
+    ],
+    reason: "'Encourage smoking cessation' is concise and nonjudgmental. The second is wordy. The last two are commanding and judgmental — inappropriate for patient-facing records.",
     section: "PLAN"
   },
   {
-    question: "Which phrasing follows the gentle imperative documentation style?",
-    correct: "Follow up with cardiology in 2 weeks.",
-    incorrect: "A follow-up with cardiology in 2 weeks should be scheduled.",
-    reason: "The imperative form 'Follow up...' is more concise and action-oriented than the passive construction.",
+    question: "Select the correct gentle imperative documentation style for follow-up:",
+    options: [
+      { text: "Follow up with cardiology in 2 weeks.", correct: true },
+      { text: "Follow up with the cardiology department within a 2-week timeframe.", correct: false },
+      { text: "A follow-up with cardiology in 2 weeks should be scheduled.", correct: false },
+      { text: "A follow-up appointment with cardiology should be arranged for 2 weeks.", correct: false }
+    ],
+    reason: "The correct answer is concise imperative. The second is wordy imperative. The last two use passive 'should be' constructions.",
     section: "PLAN"
   },
   {
-    question: "Which phrasing is preferred for patient-centered communication?",
-    correct: "Review medication adherence.",
-    incorrect: "Patient is noncompliant with medication.",
-    reason: "'Review medication adherence' is nonjudgmental and action-oriented, while 'noncompliant' can sound judgmental and is not patient-friendly.",
+    question: "Which phrasing best follows patient-centered communication guidelines?",
+    options: [
+      { text: "Review medication adherence.", correct: true },
+      { text: "Review and assess current medication adherence patterns.", correct: false },
+      { text: "Patient is noncompliant with medication.", correct: false },
+      { text: "Patient has failed to comply with the medication regimen.", correct: false }
+    ],
+    reason: "'Review medication adherence' is concise and nonjudgmental. The second is verbose. The last two use judgmental language ('noncompliant', 'failed to comply').",
     section: "PLAN"
   },
   {
-    question: "Which phrasing uses the correct imperative style?",
-    correct: "Discuss smoking cessation strategies.",
-    incorrect: "Smoking cessation strategies were discussed.",
-    reason: "The imperative 'Discuss...' focuses on the action itself and is more direct than the passive past-tense alternative.",
+    question: "Which uses the correct imperative style for discussing strategies?",
+    options: [
+      { text: "Discuss smoking cessation strategies.", correct: true },
+      { text: "Discuss available smoking cessation strategies and options with patient.", correct: false },
+      { text: "Smoking cessation strategies were discussed with the patient.", correct: false },
+      { text: "Smoking cessation strategies have been discussed at this visit.", correct: false }
+    ],
+    reason: "The correct answer is a concise imperative. The second is verbose. The last two are past-tense descriptive statements, not actionable plan items.",
     section: "PLAN"
   },
   {
     question: "Which is a correct conditional imperative statement?",
-    correct: "Consider MRI if symptoms worsen.",
-    incorrect: "An MRI should be considered if symptoms worsen.",
-    reason: "Conditional imperative statements like 'Consider... if...' maintain the action-oriented style while being appropriately conditional.",
+    options: [
+      { text: "Consider MRI if symptoms worsen.", correct: true },
+      { text: "Consider obtaining an MRI study if symptoms continue to worsen.", correct: false },
+      { text: "An MRI should be considered if symptoms worsen.", correct: false },
+      { text: "An MRI is to be considered in the event that symptoms worsen.", correct: false }
+    ],
+    reason: "'Consider MRI if symptoms worsen' is a concise conditional imperative. The second adds unnecessary words. The last two are passive constructions.",
     section: "PLAN"
   },
   {
-    question: "Which phrasing is more appropriate for clinical plan documentation?",
-    correct: "Discuss dietary recommendations.",
-    incorrect: "You failed to follow diet recommendations.",
-    reason: "The imperative 'Discuss...' is respectful and action-oriented, while 'You failed...' uses blame language that is inappropriate for patient-facing records.",
+    question: "Which phrasing is most appropriate regarding dietary recommendations?",
+    options: [
+      { text: "Discuss dietary recommendations.", correct: true },
+      { text: "Discuss and review dietary recommendations and goals with patient.", correct: false },
+      { text: "You failed to follow diet recommendations.", correct: false },
+      { text: "Patient has not been following the recommended dietary plan.", correct: false }
+    ],
+    reason: "'Discuss dietary recommendations' is concise and action-oriented. The second is verbose. The last two use blame language inappropriate for patient-facing records.",
     section: "PLAN"
   },
   {
-    question: "Which phrasing follows the preferred documentation style?",
-    correct: "Consider neurology referral if symptoms persist.",
-    incorrect: "A neurology referral should be considered if symptoms persist.",
-    reason: "The conditional imperative starting with 'Consider' is more concise and directive than the passive construction.",
+    question: "Which phrasing follows the preferred documentation style for referrals?",
+    options: [
+      { text: "Consider neurology referral if symptoms persist.", correct: true },
+      { text: "Consider a referral to the neurology department if symptoms continue to persist.", correct: false },
+      { text: "A neurology referral should be considered if symptoms persist.", correct: false },
+      { text: "A neurology referral is recommended should symptoms persist.", correct: false }
+    ],
+    reason: "The correct answer is a concise conditional imperative. The second is wordy. The last two are passive constructions that shift focus away from the action.",
     section: "PLAN"
   },
   {
-    question: "Which phrasing is patient-facing imperative language?",
-    correct: "Start low-dose aspirin therapy.",
-    incorrect: "Low-dose aspirin therapy should be started.",
-    reason: "Beginning with the action verb 'Start' is the preferred imperative style — it is clear, direct, and action-oriented.",
+    question: "Which demonstrates patient-facing imperative language for starting therapy?",
+    options: [
+      { text: "Start low-dose aspirin therapy.", correct: true },
+      { text: "Start the patient on a low-dose aspirin therapy regimen.", correct: false },
+      { text: "Low-dose aspirin therapy should be started.", correct: false },
+      { text: "Low-dose aspirin therapy is to be initiated at this time.", correct: false }
+    ],
+    reason: "'Start low-dose aspirin therapy' is clear and concise imperative. The second is wordy. The last two are passive constructions.",
     section: "PLAN"
   },
   {
-    question: "Which phrasing best demonstrates gentle imperative voice?",
-    correct: "Increase hydration if dizziness continues.",
-    incorrect: "If dizziness continues, hydration should be increased.",
-    reason: "The imperative form places the action verb first, making the instruction more direct and easier to follow.",
+    question: "Which best demonstrates gentle imperative voice for hydration advice?",
+    options: [
+      { text: "Increase hydration if dizziness continues.", correct: true },
+      { text: "Increase daily fluid intake and hydration if dizziness continues to occur.", correct: false },
+      { text: "Hydration should be increased if dizziness continues.", correct: false },
+      { text: "If dizziness continues, increased hydration is recommended.", correct: false }
+    ],
+    reason: "The correct answer places the action verb first concisely. The second is verbose imperative. The last two are passive/descriptive.",
     section: "PLAN"
   },
   {
-    question: "Which phrasing is preferred in patient-accessible documentation?",
-    correct: "Avoid NSAIDs due to renal impairment.",
-    incorrect: "NSAIDs should be avoided due to renal impairment.",
-    reason: "The imperative 'Avoid' is concise and action-oriented, which is preferred over passive voice in clinical plans.",
+    question: "Which is the preferred phrasing for medication avoidance in plans?",
+    options: [
+      { text: "Avoid NSAIDs due to renal impairment.", correct: true },
+      { text: "Avoid the use of NSAIDs and similar medications due to renal impairment.", correct: false },
+      { text: "NSAIDs should be avoided due to renal impairment.", correct: false },
+      { text: "NSAIDs are contraindicated and must be avoided due to renal impairment.", correct: false }
+    ],
+    reason: "'Avoid NSAIDs due to renal impairment' is concise imperative. The second is verbose. The third is passive. The fourth is commanding.",
     section: "PLAN"
   },
   {
-    question: "Which statement follows patient-facing language guidelines?",
-    correct: "Encourage regular physical activity.",
-    incorrect: "The patient was told to exercise more.",
-    reason: "The gentle imperative 'Encourage...' is nonjudgmental and focuses on the clinical action, making it appropriate for patient-accessible records.",
+    question: "Which statement follows patient-facing language guidelines for physical activity?",
+    options: [
+      { text: "Encourage regular physical activity.", correct: true },
+      { text: "Encourage engagement in regular physical activity as tolerated.", correct: false },
+      { text: "The patient was told to exercise more.", correct: false },
+      { text: "Patient needs to be more physically active going forward.", correct: false }
+    ],
+    reason: "'Encourage regular physical activity' is concise and nonjudgmental. The second is verbose. The last two are informal/directive in a non-patient-friendly way.",
     section: "PLAN"
   },
   {
-    question: "Which phrasing correctly uses imperative voice in a plan?",
-    correct: "Refer to physical therapy for gait training.",
-    incorrect: "A referral to physical therapy for gait training is recommended.",
-    reason: "The imperative 'Refer to...' is more concise and direct than the longer passive alternative.",
+    question: "Which phrasing correctly uses imperative voice for therapy referrals?",
+    options: [
+      { text: "Refer to physical therapy for gait training.", correct: true },
+      { text: "Refer patient to physical therapy services for gait training evaluation.", correct: false },
+      { text: "A referral to physical therapy for gait training is recommended.", correct: false },
+      { text: "Physical therapy referral for gait training should be placed.", correct: false }
+    ],
+    reason: "'Refer to physical therapy for gait training' is concise and direct. The second is wordy. The last two are passive/descriptive.",
     section: "PLAN"
   },
   {
-    question: "Which demonstrates the preferred documentation style?",
-    correct: "Continue current pain management regimen.",
-    incorrect: "The current pain management regimen will be continued.",
-    reason: "Starting with the action verb 'Continue' follows the imperative style that is preferred for plan section documentation.",
+    question: "Which demonstrates the preferred documentation style for continuing treatment?",
+    options: [
+      { text: "Continue current pain management regimen.", correct: true },
+      { text: "Continue with the current pain management regimen as previously prescribed.", correct: false },
+      { text: "The current pain management regimen will be continued.", correct: false },
+      { text: "The current pain management regimen is to be continued as prescribed.", correct: false }
+    ],
+    reason: "'Continue current pain management regimen' is the ideal concise imperative. The second adds unnecessary qualifiers. The last two are passive.",
+    section: "PLAN"
+  },
+  {
+    question: "Which phrasing is best for documenting a medication dosage adjustment?",
+    options: [
+      { text: "Increase metformin to 1000 mg twice daily.", correct: true },
+      { text: "Increase the current metformin dosage to 1000 mg to be taken twice daily.", correct: false },
+      { text: "Metformin should be increased to 1000 mg twice daily.", correct: false },
+      { text: "Metformin dosage is to be increased to 1000 mg twice daily.", correct: false }
+    ],
+    reason: "The correct answer is concise imperative. The second is verbose imperative. The last two are passive constructions.",
+    section: "PLAN"
+  },
+  {
+    question: "Which is the most appropriate way to document a lab order in a plan?",
+    options: [
+      { text: "Order CBC and CMP in 4 weeks.", correct: true },
+      { text: "Order a repeat CBC and CMP panel to be drawn in approximately 4 weeks.", correct: false },
+      { text: "CBC and CMP should be ordered in 4 weeks.", correct: false },
+      { text: "It is recommended that CBC and CMP be ordered in 4 weeks.", correct: false }
+    ],
+    reason: "'Order CBC and CMP in 4 weeks' is direct and concise. The second is verbose. The third is passive. The fourth uses subjunctive mood unnecessarily.",
+    section: "PLAN"
+  },
+  {
+    question: "Which phrasing is preferred when documenting patient education?",
+    options: [
+      { text: "Educate on signs and symptoms of infection.", correct: true },
+      { text: "Educate patient thoroughly on all signs and symptoms of potential infection.", correct: false },
+      { text: "Patient should be educated on signs and symptoms of infection.", correct: false },
+      { text: "Education on signs and symptoms of infection is to be provided.", correct: false }
+    ],
+    reason: "'Educate on signs and symptoms of infection' is concise imperative. The second is verbose. The last two are passive constructions.",
+    section: "PLAN"
+  },
+  {
+    question: "Which best uses gentle imperative tone for scheduling?",
+    options: [
+      { text: "Schedule follow-up in 3 months.", correct: true },
+      { text: "Schedule a routine follow-up appointment in approximately 3 months.", correct: false },
+      { text: "A follow-up in 3 months should be scheduled.", correct: false },
+      { text: "A follow-up appointment is to be scheduled for 3 months from now.", correct: false }
+    ],
+    reason: "'Schedule follow-up in 3 months' is direct and concise. The second adds unnecessary words. The last two are passive.",
+    section: "PLAN"
+  },
+  {
+    question: "Which phrasing follows the imperative style for discontinuing medication?",
+    options: [
+      { text: "Discontinue lisinopril due to persistent cough.", correct: true },
+      { text: "Discontinue the use of lisinopril at this time due to persistent cough.", correct: false },
+      { text: "Lisinopril should be discontinued due to persistent cough.", correct: false },
+      { text: "Lisinopril is to be discontinued at this time due to persistent cough.", correct: false }
+    ],
+    reason: "'Discontinue lisinopril due to persistent cough' is concise imperative. The second is verbose. The last two are passive constructions.",
     section: "PLAN"
   }
 ];
@@ -306,6 +421,7 @@ const App = (() => {
     let pool = [];
     switch (moduleKey) {
       case "imperative":
+        // 4-option format - return as-is (shuffled)
         return shuffleArray(IMPERATIVE_QUIZ).slice(0, count);
       case "articles":
         pool = shuffleArray(ARTICLE_ERRORS).slice(0, count);
@@ -352,7 +468,7 @@ const App = (() => {
       {
         key: "imperative", title: "Patient-Facing Language", icon: "🗣️",
         desc: "Quiz on imperative language and patient-centered documentation style",
-        questions: 15, xp: 15,
+        questions: 20, xp: 15,
       },
       {
         key: "articles", title: "Article Errors", icon: "📰",
@@ -497,17 +613,22 @@ const App = (() => {
     var sectionText = q.section || "CLINICAL DOCUMENTATION";
     document.getElementById("quizSectionBadge").textContent = "📋 " + sectionText;
 
-    // Set instruction text
-    if (q.question) {
-      document.querySelector(".quiz-instruction").textContent = q.question;
-    } else {
-      document.querySelector(".quiz-instruction").textContent = "Select the grammatically correct sentence:";
-    }
+    var options;
 
-    var options = shuffleArray([
-      { text: q.correct, isCorrect: true },
-      { text: q.incorrect, isCorrect: false },
-    ]);
+    if (q.options) {
+      // 4-option format (imperative quiz)
+      document.querySelector(".quiz-instruction").textContent = q.question;
+      options = shuffleArray(q.options.map(function(opt) {
+        return { text: opt.text, isCorrect: opt.correct };
+      }));
+    } else {
+      // 2-option format (grammar error quizzes)
+      document.querySelector(".quiz-instruction").textContent = "Select the grammatically correct sentence:";
+      options = shuffleArray([
+        { text: q.correct, isCorrect: true },
+        { text: q.incorrect, isCorrect: false },
+      ]);
+    }
 
     var optionsEl = document.getElementById("quizOptions");
     optionsEl.innerHTML = options.map(function(opt, i) {
@@ -649,11 +770,11 @@ const App = (() => {
 
     var list = document.getElementById("breakdownList");
     list.innerHTML = currentQuiz.answers.map(function(a, i) {
-      var correctText = escapeHtml(a.question.correct);
-      var incorrectText = escapeHtml(a.question.incorrect);
+      var correctText = escapeHtml(a.question.correct || (a.question.options && a.question.options.find(function(o) { return o.correct; }) || {}).text || "");
+      var selectedText = escapeHtml(a.selectedText || "");
       return '<div class="breakdown-item ' + (a.wasCorrect ? "correct-item" : "wrong-item") + '">' +
         '<div class="breakdown-q">Q' + (i + 1) + ' — ' + escapeHtml(a.question.section || "Clinical Plan") + '</div>' +
-        (!a.wasCorrect ? '<div class="breakdown-sentence user-wrong">✗ ' + incorrectText + '</div>' : '') +
+        (!a.wasCorrect ? '<div class="breakdown-sentence user-wrong">✗ ' + selectedText + '</div>' : '') +
         '<div class="breakdown-sentence correct-answer">✓ ' + correctText + '</div>' +
         '<div class="breakdown-reason">💡 ' + escapeHtml(a.question.reason || '') + '</div>' +
         '</div>';
