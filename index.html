@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedGrammar — Medical Grammar Mastery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== TOP NAV ===== -->
+  <nav class="topnav" id="topnav">
+    <div class="nav-left">
+      <button class="nav-brand" onclick="App.navigate('welcome')">
+        <span class="brand-icon">💊</span>
+        <span class="brand-text">MedGrammar</span>
+      </button>
+    </div>
+    <div class="nav-center">
+      <button class="nav-link" data-page="tutorial" onclick="App.navigate('tutorial')">Tutorial</button>
+      <button class="nav-link" data-page="modules" onclick="App.navigate('modules')">Modules</button>
+      <button class="nav-link" data-page="dashboard" onclick="App.navigate('dashboard')">Dashboard</button>
+    </div>
+    <div class="nav-right">
+      <div class="xp-badge" id="navXp">
+        <span class="xp-icon">⚡</span>
+        <span class="xp-value" id="navXpValue">0 XP</span>
+      </div>
+      <div class="streak-badge" id="navStreak">
+        <span class="streak-icon">🔥</span>
+        <span class="streak-value" id="navStreakValue">0</span>
+      </div>
+      <button class="theme-toggle" id="themeToggle" onclick="App.toggleTheme()" aria-label="Toggle theme">
+        <span class="theme-icon" id="themeIcon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== MASCOT ===== -->
+  <div class="mascot" id="mascot" onclick="App.mascotSpeak()">
+    <div class="mascot-body">🤖</div>
+    <div class="mascot-bubble" id="mascotBubble"></div>
+  </div>
+
+  <!-- ===== SCREENS ===== -->
+  <main class="app-main">
+
+    <!-- WELCOME -->
+    <section class="screen active" id="screen-welcome">
+      <div class="welcome-hero">
+        <div class="hero-content">
+          <div class="hero-badge">✨ AI-Powered Grammar Training</div>
+          <h1 class="hero-title">
+            Master <span class="gradient-text">Medical Grammar</span><br />One Challenge at a Time
+          </h1>
+          <p class="hero-subtitle">
+            Level up your clinical documentation skills with interactive, gamified grammar challenges extracted from real medical records.
+          </p>
+          <div class="hero-actions">
+            <input type="text" class="hero-input" id="usernameInput" placeholder="Enter your name to begin..." maxlength="20" />
+            <button class="btn btn-primary btn-glow" id="startBtn" onclick="App.startJourney()">
+              Start Learning <span class="btn-arrow">→</span>
+            </button>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat"><span class="hero-stat-value">1700+</span><span class="hero-stat-label">Challenges</span></div>
+            <div class="hero-stat"><span class="hero-stat-value">4</span><span class="hero-stat-label">Modules</span></div>
+            <div class="hero-stat"><span class="hero-stat-value">100%</span><span class="hero-stat-label">Free</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TUTORIAL -->
+    <section class="screen" id="screen-tutorial">
+      <div class="container tutorial-container">
+        <div class="section-header">
+          <div class="tutorial-top-badge">📚 Required Before Modules</div>
+          <h2 class="section-title">Patient-Facing Imperative Language</h2>
+          <p class="section-subtitle">Learn the preferred documentation style for clinical plans</p>
+        </div>
+
+        <!-- Patient-Facing Imperative Language Content -->
+        <div class="tutorial-step active" id="tutorialStep1">
+          <div class="tut-card">
+            <div class="tut-card-header">
+              <span class="tut-card-icon">🗣️</span>
+              <h3 class="tut-card-title">Patient-Facing Imperative Language in Clinical Plan Documentation</h3>
+            </div>
+            <p class="tut-card-intro">In clinical documentation, especially within the Plan section of SOAP notes, the preferred style is often a <strong>gentle imperative voice</strong>. This approach gives clear, concise clinical instructions while maintaining a professional and patient-centered tone.</p>
+
+            <div class="tut-rule-group">
+              <div class="tut-rule">
+                <div class="tut-rule-header">
+                  <span class="tut-rule-icon">❓</span>
+                  <span class="tut-rule-label">What Is Patient-Facing Imperative Language?</span>
+                </div>
+                <p class="tut-rule-desc">Patient-facing language refers to documentation written in a manner that is:</p>
+                <ul class="tut-list">
+                  <li>Clear and easy to understand</li>
+                  <li>Respectful and nonjudgmental</li>
+                  <li>Action-oriented</li>
+                  <li>Appropriate for communication that may be reviewed by patients</li>
+                </ul>
+                <p class="tut-rule-desc">Within this broader communication style, the imperative voice is commonly used for plans, recommendations, and follow-up instructions.</p>
+                <p class="tut-rule-desc"><strong>Examples of common imperative verbs in clinical plans:</strong></p>
+                <div class="tut-verb-grid">
+                  <span class="tut-verb-tag">Continue</span>
+                  <span class="tut-verb-tag">Start</span>
+                  <span class="tut-verb-tag">Monitor</span>
+                  <span class="tut-verb-tag">Follow up</span>
+                  <span class="tut-verb-tag">Discuss</span>
+                  <span class="tut-verb-tag">Consider</span>
+                  <span class="tut-verb-tag">Encourage</span>
+                  <span class="tut-verb-tag">Avoid</span>
+                </div>
+                <p class="tut-rule-desc">These verbs directly state the intended action without sounding harsh or authoritarian.</p>
+              </div>
+
+              <div class="tut-rule">
+                <div class="tut-rule-header">
+                  <span class="tut-rule-icon">📌</span>
+                  <span class="tut-rule-label">Why Imperative Tone Is Preferred in the Plan Section</span>
+                </div>
+                <p class="tut-rule-desc">The Plan section is intended to communicate actionable next steps. Imperative phrasing:</p>
+                <ul class="tut-list">
+                  <li>Improves clarity and readability</li>
+                  <li>Keeps recommendations concise</li>
+                  <li>Reduces ambiguity regarding the intended action</li>
+                  <li>Aligns with standard clinical documentation practices</li>
+                  <li>Supports patient-centered communication when records are patient-accessible</li>
+                </ul>
+                <p class="tut-rule-desc">The tone should remain professional and gentle rather than commanding.</p>
+              </div>
+
+              <div class="tut-rule">
+                <div class="tut-rule-header">
+                  <span class="tut-rule-icon">✅</span>
+                  <span class="tut-rule-label">Correct: Gentle Imperative Tone</span>
+                </div>
+                <div class="tut-example-grid">
+                  <div class="tut-example good">
+                    <span class="tut-tag">✅ Preferred</span>
+                    <p>"Continue current antihypertensive medication."</p>
+                    <p>"Monitor blood glucose levels daily."</p>
+                    <p>"Follow up with cardiology in 2 weeks."</p>
+                    <p>"Discuss smoking cessation strategies."</p>
+                    <p>"Consider MRI if symptoms worsen."</p>
+                  </div>
+                </div>
+                <p class="tut-rule-desc"><strong>Why these work:</strong></p>
+                <ul class="tut-list">
+                  <li>Begin with an action verb</li>
+                  <li>Clearly state the intended plan</li>
+                  <li>Concise and directive without sounding forceful</li>
+                  <li>Maintain a neutral and professional tone</li>
+                </ul>
+              </div>
+
+              <div class="tut-rule">
+                <div class="tut-rule-header">
+                  <span class="tut-rule-icon">⚠️</span>
+                  <span class="tut-rule-label">Less Preferred: Non-Imperative Construction</span>
+                </div>
+                <div class="tut-example-grid">
+                  <div class="tut-example bad">
+                    <span class="tut-tag">⚠️ Less Effective</span>
+                    <p>"Current antihypertensive medication should be continued."</p>
+                    <p>"Blood glucose levels should be monitored daily."</p>
+                    <p>"Smoking cessation strategies were discussed."</p>
+                  </div>
+                </div>
+                <p class="tut-rule-desc"><strong>Why these are less effective:</strong></p>
+                <ul class="tut-list">
+                  <li>Passive structure makes the plan less direct</li>
+                  <li>Longer and less concise</li>
+                  <li>Focus shifts away from the action itself</li>
+                  <li>Documentation sounds descriptive rather than action-oriented</li>
+                </ul>
+                <p class="tut-rule-desc">These may still be grammatically correct, but they do not reflect the preferred imperative style for plan documentation.</p>
+              </div>
+
+              <div class="tut-rule">
+                <div class="tut-rule-header">
+                  <span class="tut-rule-icon">❌</span>
+                  <span class="tut-rule-label">Incorrect or Non-Patient-Friendly Tone</span>
+                </div>
+                <div class="tut-example-grid">
+                  <div class="tut-example bad">
+                    <span class="tut-tag">❌ Avoid</span>
+                    <p>"The patient must stop smoking immediately."</p>
+                    <p>"Patient is noncompliant with medication."</p>
+                    <p>"You failed to follow diet recommendations."</p>
+                  </div>
+                  <div class="tut-example good">
+                    <span class="tut-tag">✅ Preferred Alternatives</span>
+                    <p>"Encourage smoking cessation."</p>
+                    <p>"Review medication adherence."</p>
+                    <p>"Discuss dietary recommendations."</p>
+                  </div>
+                </div>
+                <p class="tut-rule-desc"><strong>Why these should be avoided:</strong></p>
+                <ul class="tut-list">
+                  <li>Can sound judgmental or punitive</li>
+                  <li>May negatively affect patient-centered communication</li>
+                  <li>Less appropriate for records patients may access directly</li>
+                </ul>
+              </div>
+
+              <div class="tut-rule">
+                <div class="tut-rule-header">
+                  <span class="tut-rule-icon">📋</span>
+                  <span class="tut-rule-label">Key Guidance for Documentation Teams</span>
+                </div>
+                <p class="tut-rule-desc">When drafting the Plan section:</p>
+                <ol class="tut-list-ordered">
+                  <li>Start recommendations with an action verb whenever appropriate.</li>
+                  <li>Keep instructions concise and clinically clear.</li>
+                  <li>Maintain a respectful, nonjudgmental tone.</li>
+                  <li>Prefer active, directive phrasing over passive constructions.</li>
+                  <li>Use conditional imperative statements when needed:<br>
+                    <em>"Consider neurology referral if symptoms persist."</em><br>
+                    <em>"Increase hydration if dizziness continues."</em>
+                  </li>
+                </ol>
+                <p class="tut-rule-desc"><strong>In summary:</strong> Patient-facing language is the overall communication goal, while gentle imperative voice is a preferred documentation style used to express clinical plans clearly and professionally.</p>
+              </div>
+            </div>
+
+            <div class="tut-actions">
+              <button class="btn btn-primary btn-glow" onclick="App.completeTutorial()">
+                Complete Tutorial & Start Learning <span class="btn-arrow">→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULE SELECTION -->
+    <section class="screen" id="screen-modules">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Choose Your Module</h2>
+          <p class="section-subtitle">Progress through difficulty levels to master medical grammar</p>
+        </div>
+        <div class="daily-challenge-card" id="dailyChallenge" onclick="App.startDailyChallenge()">
+          <div class="daily-glow"></div>
+          <div class="daily-content">
+            <div class="daily-badge">⚡ Daily Challenge</div>
+            <h3 class="daily-title">Today's Grammar Sprint</h3>
+            <p class="daily-desc">Complete a quick 10-question mix for bonus XP!</p>
+          </div>
+          <div class="daily-reward">+50 XP</div>
+        </div>
+        <div class="modules-grid" id="modulesGrid"></div>
+      </div>
+    </section>
+
+    <!-- QUIZ GAME -->
+    <section class="screen" id="screen-quiz">
+      <div class="container quiz-container">
+        <div class="quiz-header">
+          <button class="btn btn-ghost" onclick="App.confirmQuit()">← Back</button>
+          <div class="quiz-progress-info">
+            <span class="quiz-module-label" id="quizModuleLabel"></span>
+            <span class="quiz-question-count" id="quizQuestionCount"></span>
+          </div>
+          <div class="quiz-timer" id="quizTimer">
+            <span class="timer-icon">⏱</span>
+            <span class="timer-value" id="timerValue">0:00</span>
+          </div>
+        </div>
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill" id="quizProgressFill"></div>
+        </div>
+        <div class="quiz-card" id="quizCard">
+          <div class="quiz-section-badge" id="quizSectionBadge"></div>
+          <div class="quiz-prompt">
+            <p class="quiz-instruction">Select the grammatically correct sentence:</p>
+          </div>
+          <div class="quiz-options" id="quizOptions"></div>
+          <div class="quiz-feedback" id="quizFeedback"></div>
+          <div class="quiz-actions">
+            <button class="btn btn-primary btn-next" id="quizNextBtn" onclick="App.nextQuestion()" style="display:none">
+              Next Question <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="screen" id="screen-results">
+      <div class="container">
+        <div class="results-hero" id="resultsHero">
+          <div class="results-emoji" id="resultsEmoji"></div>
+          <h2 class="results-title" id="resultsTitle"></h2>
+          <p class="results-subtitle" id="resultsSubtitle"></p>
+        </div>
+        <div class="results-stats-grid" id="resultsStats"></div>
+        <div class="results-xp-card" id="resultsXp"></div>
+        <div class="results-actions">
+          <button class="btn btn-primary" onclick="App.navigate('modules')">Back to Modules</button>
+          <button class="btn btn-outline" id="retryBtn" onclick="App.retryModule()">Retry Module</button>
+        </div>
+        <div class="results-breakdown" id="resultsBreakdown">
+          <h3 class="breakdown-title">Question Breakdown</h3>
+          <div class="breakdown-list" id="breakdownList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section class="screen" id="screen-dashboard">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Your Dashboard</h2>
+          <p class="section-subtitle">Track your progress and achievements</p>
+        </div>
+        <div class="dashboard-grid">
+          <div class="dash-card dash-profile" id="dashProfile"></div>
+          <div class="dash-card dash-level" id="dashLevel"></div>
+          <div class="dash-card dash-progress" id="dashProgress"></div>
+          <div class="dash-card dash-achievements" id="dashAchievements"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- TOAST -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-card" id="modalCard">
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-body" id="modalBody"></p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" onclick="App.closeModal()">Cancel</button>
+        <button class="btn btn-danger" id="modalConfirm"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACHIEVEMENT POPUP -->
+  <div class="achievement-popup" id="achievementPopup">
+    <div class="achievement-card">
+      <div class="achievement-icon" id="achievementIcon"></div>
+      <div class="achievement-info">
+        <span class="achievement-label">Achievement Unlocked!</span>
+        <span class="achievement-name" id="achievementName"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
