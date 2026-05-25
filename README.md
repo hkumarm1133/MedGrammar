@@ -102,4 +102,4 @@ No frameworks. No bundlers. No tracking.
 
 ## 📜 License
 
-Personal / educational project. Add a license here if you intend to distribute.
+Personal / educational project. Add a license here if you intend to distribute.  
